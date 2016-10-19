@@ -4,6 +4,10 @@
 		<h1><?php bloginfo ('name'); ?></h1>
 		<h2><?php bloginfo ('description')?></h2>
 	</header>
+<?php include TEMPLATEPATH . "/templates/nav.php" ?>
+	<?php
+		dynamic_sidebar('sidebar_footer');
+	?>
 	<section class="content">
 		<?php rewind_posts(); ?>
 		<?php query_posts('posts_per_pages=1'); ?>
