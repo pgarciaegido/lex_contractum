@@ -1,0 +1,15 @@
+.Buscar{
+	text-align: right;
+	margin-bottom: $baseline;
+	&-input{
+		width: 320px;
+		height: 20px;
+		border-radius: 5px;
+		background: $white;
+	}
+}
+.fa-search:before {
+    content: "\f002";
+    font-size: 1.25em;
+    color: $beige;
+}

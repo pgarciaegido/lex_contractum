@@ -1,0 +1,33 @@
+.Header{
+	&-logo{
+		width: 495px;
+		margin: 0 auto $baseline auto;
+		display: block;
+	}
+}
+
+.Nav{
+	background-color: $white;
+	height: 70px;
+	margin-bottom: $baseline;
+	&-list{
+		display: flex;
+		text-align: center;
+		padding: 0;
+		height: 100%;
+		align-items: center;
+		justify-content: space-between;
+		&-item{
+			align-items: center;
+			list-style-type: none;
+			width: 16%;
+		}
+		a{
+			text-decoration: none;
+			color: $gray-txt;
+			font-family: 'Asap', sans-serif;
+			font-size: 1.1 em;
+			font-weight: 700;
+		}
+	}
+}
