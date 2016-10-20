@@ -1,12 +1,130 @@
+@charset "UTF-8";
 /*
 Theme Name: Lex Contractum
 Theme URI: http://lexcontractum.com
-Author: Pablo García Egido
+Author: Pablo Garc├¡a Egido
 Author: http://pegido.me
 Description: tema para la web lex contractum
 Version: 1.0
 */
+/**
+*Colors
+**/
+/**
+*Layout
+**/
+/**
+*Effects
+**/
+body {
+  background-color: #EBEBEB;
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  color: #5D5A59; }
+  body .container {
+    width: 1000px;
+    margin: 0 auto; }
 
-body{
-	background-color: lightgray;
-}
+.Buscar {
+  text-align: right;
+  margin-bottom: 30px; }
+  .Buscar-input {
+    width: 320px;
+    height: 20px;
+    border-radius: 5px;
+    background: #F4F5F0; }
+
+.fa-search:before {
+  content: "\f002";
+  font-size: 1.25em;
+  color: #D0C4B6; }
+
+.Header-logo {
+  width: 495px;
+  margin: 0 auto 30px auto;
+  display: block; }
+
+.Nav {
+  background-color: #F4F5F0;
+  height: 70px;
+  margin-bottom: 30px; }
+  .Nav-list {
+    display: flex;
+    text-align: center;
+    padding: 0;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between; }
+    .Nav-list-item {
+      align-items: center;
+      list-style-type: none;
+      width: 16%; }
+    .Nav-list a {
+      text-decoration: none;
+      color: #5D5A59;
+      font-family: 'Asap', sans-serif;
+      font-size: 1.1 em;
+      font-weight: 700; }
+
+.Principal {
+  margin: 0 0 30px 0;
+  position: relative;
+  box-shadow: 0 3px 8px rgba(45, 41, 38, 0.2);
+  height: 457px; }
+  .Principal-pic {
+    width: 100%;
+    height: 100%; }
+  .Principal-desc {
+    max-width: 580px;
+    background-color: rgba(244, 245, 240, 0.8);
+    padding: 15px;
+    position: absolute;
+    top: 183px; }
+    .Principal-desc-title {
+      margin: 0;
+      font-size: 2.25em;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+      border-bottom: 1px #D0C4B6 solid;
+      color: #2D2926; }
+
+.Author {
+  font-family: 'Asap';
+  display: flex;
+  align-items: center; }
+  .Author-pic {
+    width: 30px;
+    border-radius: 50%;
+    height: 30px;
+    padding-right: 5px; }
+  .Author-name {
+    margin: 0;
+    font-weight: 700;
+    padding-right: 5px; }
+  .Author span {
+    font-style: italic;
+    font-weight: 400; }
+  .Author span::before {
+    content: '|';
+    padding-right: 5px; }
+
+.Feed {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .Feed-article {
+    background-color: #F4F5F0;
+    width: 30.33%;
+    box-shadow: 0 3px 8px rgba(45, 41, 38, 0.2);
+    margin-bottom: 30px; }
+    .Feed-article-pic {
+      width: 100%; }
+    .Feed-article-text {
+      padding: 10px; }
+      .Feed-article-text-title {
+        margin: 0;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        border-bottom: 1px #D0C4B6 solid; }
+
+/*# sourceMappingURL=style.css.map */
