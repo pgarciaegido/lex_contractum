@@ -20,9 +20,81 @@ body{
 		margin: 0 auto;
 	}
 }
-
+/*
+*FEED
+*/
 @import 'partials/buscar';
 @import 'partials/header';
 @import 'partials/principal';
 @import 'partials/author';
 @import 'partials/feed';
+
+/*
+*ARTICLE
+*/
+
+.wrapper{
+	max-width:830px;
+	margin: 0 auto;
+}
+.status{
+	font-size: $h3;
+	font-weight: 700;
+	font-family: 'Asap';
+	font-style: italic;
+	margin: $margin;
+	color: $red;
+}
+
+.Article{
+	max-width:100%;
+	background-color: $white;
+	padding: $baseline;
+	&-title{
+		font-size: $h1;
+		font-weight: 700;
+		margin: $margin;
+		line-height: $lh-title;
+	}
+	&-pic{
+		width: 100%;
+		text-align: center;
+		height: 380px;
+		margin-bottom: $baseline;
+	}
+	&-info{
+		display:flex;
+		justify-content: space-between;
+		padding-bottom: $baseline;
+		border-bottom: $bottom-line;
+		margin-bottom: $baseline;
+	}
+	&-entradilla{
+		font-size: $h3;
+		line-height: $lh-entradilla;
+	}
+	&-text{
+		font-size: $p;
+		line-height: $lh-p;
+		padding-bottom: $baseline;
+		border-bottom: $bottom-line;
+		margin-bottom: $baseline;
+	}
+}
+
+.Etiqueta{
+	display: flex;
+	font-family: 'Asap';
+	align-items: center;
+	&-name{
+		margin:0;
+		padding: 3px;
+		margin-left: 5px;
+		border: 1px solid $beige;
+
+	}
+	a{
+		text-decoration: none;
+		color: $gray-txt;
+	}
+}
