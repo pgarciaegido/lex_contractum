@@ -10,6 +10,7 @@
 	background-color: $white;
 	height: 70px;
 	margin-bottom: $baseline;
+	box-shadow: $box-shadow;
 	&-list{
 		display: flex;
 		text-align: center;
@@ -21,12 +22,13 @@
 			align-items: center;
 			list-style-type: none;
 			width: 16%;
+			line-height: 1.2em;
 		}
 		a{
 			text-decoration: none;
 			color: $gray-txt;
 			font-family: 'Asap', sans-serif;
-			font-size: 1.1 em;
+			font-size: 1em;
 			font-weight: 700;
 		}
 	}

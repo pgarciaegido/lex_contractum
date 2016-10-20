@@ -50,17 +50,13 @@ body{
 	max-width:100%;
 	background-color: $white;
 	padding: $baseline;
+	margin-bottom: $baseline;
+	box-shadow: $box-shadow;
 	&-title{
 		font-size: $h1;
 		font-weight: 700;
 		margin: $margin;
 		line-height: $lh-title;
-	}
-	&-pic{
-		width: 100%;
-		text-align: center;
-		height: 380px;
-		margin-bottom: $baseline;
 	}
 	&-info{
 		display:flex;
@@ -82,6 +78,23 @@ body{
 	}
 }
 
+.Figure{
+	margin-bottom: $baseline;
+	margin: $margin;
+	&-pic{
+		width: 100%;
+		text-align: center;
+		height: 380px;
+	}
+	&-caption{
+		font-size: .8em;
+		font-style: italic;
+		text-align: right;
+		margin: 0;
+	}
+}
+
+
 .Etiqueta{
 	display: flex;
 	font-family: 'Asap';
@@ -97,4 +110,15 @@ body{
 		text-decoration: none;
 		color: $gray-txt;
 	}
+}
+
+.Social{
+	text-align: right;
+}
+.fa-linkedin-square:before, .fa-twitter-square:before, .fa-facebook-square:before{
+    content: "\f08c";
+    font-size: 2.5em;
+    color: $red;
+    text-align: right;
+    padding-left: 10px;
 }
