@@ -1,0 +1,15 @@
+.Figure{
+	margin-bottom: $baseline;
+	margin: $margin;
+	&-pic{
+		width: 100%;
+		text-align: center;
+		height: 380px;
+	}
+	&-caption{
+		font-size: .8em;
+		font-style: italic;
+		text-align: right;
+		margin: 0;
+	}
+}

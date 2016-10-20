@@ -1,0 +1,10 @@
+.Social{
+	text-align: right;
+}
+.fa-linkedin-square:before, .fa-twitter-square:before, .fa-facebook-square:before{
+    content: "\f08c";
+    font-size: 2.5em;
+    color: $red;
+    text-align: right;
+    padding-left: 10px;
+}

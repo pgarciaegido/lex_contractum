@@ -1,0 +1,31 @@
+.Article{
+	max-width:100%;
+	background-color: $white;
+	padding: $baseline;
+	margin-bottom: $baseline;
+	box-shadow: $box-shadow;
+	&-title{
+		font-size: $h1;
+		font-weight: 700;
+		margin: $margin;
+		line-height: $lh-title;
+	}
+	&-info{
+		display:flex;
+		justify-content: space-between;
+		padding-bottom: $baseline;
+		border-bottom: $bottom-line;
+		margin-bottom: $baseline;
+	}
+	&-entradilla{
+		font-size: $h3;
+		line-height: $lh-entradilla;
+	}
+	&-text{
+		font-size: $p;
+		line-height: $lh-p;
+		padding-bottom: $baseline;
+		border-bottom: $bottom-line;
+		margin-bottom: $baseline;
+	}
+}
