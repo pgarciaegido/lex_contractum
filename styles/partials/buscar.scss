@@ -19,3 +19,14 @@
 		margin-right: $margin-tablet;
 	}
 }
+
+@media screen and (max-width : 500px){
+	.Buscar{
+		&-input{
+			display: none;
+		}
+	}
+	.fa-search:before {
+    font-size: 1.5em;
+	}
+}

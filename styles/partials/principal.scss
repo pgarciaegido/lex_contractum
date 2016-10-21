@@ -25,7 +25,7 @@
 	}
 }
 
-@media screen and (max-width : 1000px){
+@media screen and (max-width : 800px){
 	.Principal{
 		height:auto;
 		&-desc{
@@ -33,5 +33,11 @@
 				font-size:$h1-tablet;
 			}
 		}
+	}
+}
+
+@media screen and (max-width : 500px){
+	.Principal{
+		display:none;
 	}
 }

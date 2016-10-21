@@ -53,8 +53,15 @@
 	font-family: 'Asap';
 	padding: 10px;
 	text-align: center;
-	position: relative;
+	position: fixed;
 	display: none;
+	z-index: 2;
+	top: 20%;
+	left: 10%;
+
+	&-header{
+		position:relative;
+	}
 	&-title{
 		color: $red;
 		font-size: 2em;
@@ -65,28 +72,47 @@
 		&-item{
 			list-style-type: none;
 			background: $white;
-			margin-bottom: 5px;
+			margin-bottom: 15px;
 			color: $gray-txt;
 			font-weight: bold;
+			padding: 8px 0;
 		}
 		a{
 			text-decoration: none;
 		}
 	}
 }
-.fa-times-circle-o{
+.fa-times-circle-o:before {
 	position: absolute;
-	top:20px;
+	top:12px;
 	right: 20px;
+	font-size: 2em;
 }
 
+//Tengo que darle a body overflow: hidden!!
+
+.darkbg{
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-color: rgba($black, .8);
+	position: absolute;
+	display: none;
+}
 .active{
 	display: block;
 }
 .hidden{
 	display: none;
 }
+
 @media screen and (max-width : 800px){
+	.Header{
+		&-logo{
+			width: 60%;
+		}
+	}
+
 	.Nav-list{
 		a{
 			font-size: 0.9em;
@@ -94,3 +120,12 @@
 	}
 }
 
+@media screen and (max-width : 500px){
+	.Nav{
+		display: none;
+	}
+	
+	.fa-caret-down:before {
+    display: block;
+	}
+}
