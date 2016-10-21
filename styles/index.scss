@@ -46,47 +46,15 @@ body{
 	color: $red;
 }
 
+@media screen and (max-width : 800px){
+	.status{
+		margin-left: $margin-tablet;
+	}
+}
+
 @import 'partials/article';
 @import 'partials/figure';
 @import 'partials/etiqueta';
 @import 'partials/social';
-
-.About{
-	&-title{
-		text-align: center;
-		color: $red;
-		font-size: $h1;
-		margin-bottom:$baseline;
-	}
-	&-article{
-		display: flex;
-		justify-content: space-between;
-		background: $white;
-		padding: $baseline;
-		margin-bottom: $baseline;
-		box-shadow: $box-shadow;
-		&-pic{
-			width: 207px;
-			height: 207px;
-			border-radius: 50%;
-		}
-		&-profile{
-			max-width: 500px;
-			&-name{
-				font-size: $h2;
-				font-family: 'Asap';
-				text-align: center;
-				margin: $margin;
-				font-weight: 700;
-			}
-			&-text{
-				font-size: $p;
-				a{
-					color: $red;
-					font-weight: 700;
-					text-decoration: none;
-				}
-			}
-		}
-	}
-}
+@import 'partials/about';
+@import 'partials/contacta';

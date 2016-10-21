@@ -19,6 +19,9 @@ $baseline: 30px;
 $bottom-line: 1px $beige solid;
 $margin: 0 0 $baseline 0;
 
+//Tablet
+$margin-tablet: 20px;
+
 /**
 *Effects
 **/
@@ -34,6 +37,9 @@ $h2: 1.5em;
 $h3: 1.375em;
 $p: 1.13em;
 
+//Tablet
+$h1-tablet: 1.9em;
+
 /**
 *Line-Height
 **/
@@ -41,3 +47,10 @@ $p: 1.13em;
 $lh-title: 1.325em;
 $lh-p: 1.7em;
 $lh-entradilla: 1.6em;
+
+/**
+*Sizes
+**/
+
+$tablet-width: 800px;
+$mobile-width: 500px;

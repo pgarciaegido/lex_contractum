@@ -29,3 +29,10 @@
 		margin-bottom: $baseline;
 	}
 }
+
+@media screen and (max-width : 800px){
+	.Article{
+		margin-right: $margin-tablet;
+		margin-left: $margin-tablet;
+	}
+}

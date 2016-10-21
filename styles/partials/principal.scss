@@ -8,11 +8,11 @@
 		height:100%;
 	}
 	&-desc{
-		max-width:580px;
+		width:58%;
 		background-color: rgba($white,.8);
 		padding: 15px;
 		position: absolute;
-    top: 183px;
+    bottom: 22%;
     &-title{
     	margin:0;
     	font-size:$h1;
@@ -22,5 +22,16 @@
     	color: $black;
     	line-height: $lh-title;
     }
+	}
+}
+
+@media screen and (max-width : 1000px){
+	.Principal{
+		height:auto;
+		&-desc{
+			&-title{
+				font-size:$h1-tablet;
+			}
+		}
 	}
 }

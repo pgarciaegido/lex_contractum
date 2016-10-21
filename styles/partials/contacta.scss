@@ -1,0 +1,59 @@
+.Contacta{
+	&-title{
+		text-align: center;
+		color: $red;
+		font-size: $h1;
+		margin-bottom: $baseline;
+	}
+	&-formulario{
+		background: $white;
+		padding: $baseline;
+		margin-bottom: $baseline;
+		box-shadow: $box-shadow;
+		&-text{
+			margin: $margin;
+			font-size: $p;
+		}
+		&-form{
+			label{
+				display:block;
+				font-size:$p;
+			}
+			input, textarea{
+				width: 95%;
+				border: none;
+				border-radius: 5px;
+				font-size: $p;
+				padding: 15px;
+				margin-bottom: 15px;
+				border: 1px solid $gray-txt;
+			}
+			input:focus, textarea:focus{
+				box-shadow: $box-shadow;
+			}
+			button{
+				text-align: center;
+				padding: 10px;
+				color: white;
+				background: $red;
+				display: block;
+				margin: 0 auto;
+				width:130px;
+				border: none;
+				border-radius: 5px;
+				box-shadow: $box-shadow;
+			}
+		}
+	}
+}
+
+@media screen and (max-width : 800px){
+	.Contacta{
+		margin-right: $margin-tablet;
+		margin-left: $margin-tablet;
+		button{
+			width: 25%;
+			padding: 15px;
+		}
+	}
+}

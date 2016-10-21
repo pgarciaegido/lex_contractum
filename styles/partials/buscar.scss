@@ -13,3 +13,9 @@
     font-size: 1.25em;
     color: $beige;
 }
+
+@media screen and (max-width : 800px){
+	.Buscar{
+		margin-right: $margin-tablet;
+	}
+}
