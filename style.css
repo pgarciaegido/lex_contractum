@@ -107,11 +107,11 @@ body {
   font-family: 'Asap';
   padding: 10px;
   text-align: center;
-  position: fixed;
-  display: none;
+  display: block;
   z-index: 2;
-  top: 20%;
-  left: 10%; }
+  top: -9999px;
+  left: 10%;
+  position: absolute; }
   .Mobile-header {
     position: relative; }
   .Mobile-title {
@@ -147,8 +147,16 @@ body {
 .active {
   display: block; }
 
+.active-menu {
+  display: block;
+  transition: .2s;
+  top: 20%; }
+
 .hidden {
   display: none; }
+
+.overflow {
+  overflow: hidden; }
 
 @media screen and (max-width: 800px) {
   .Header-logo {

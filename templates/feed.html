@@ -7,8 +7,8 @@
 	<link rel="stylesheet" href="../style.css">
 	<link href="https://fonts.googleapis.com/css?family=Asap:400,400i,700,700i|Merriweather:400,400i,700" rel="stylesheet">
 </head>
-<body>
-<div class="darkbg"></div>
+<body id="body">
+<div class="darkbg" id="darkbg"></div>
 <!-- HEADER -->
 	<div class="container">
 		<div class="Buscar">
@@ -16,8 +16,10 @@
 			<i class="fa fa-search" aria-hidden="true"></i>
 		</div>
 		<header class="Header">
-			<img class="Header-logo" src="../images/logo.svg" alt="">
+			<img class="Header-logo" id="logo" src="../images/logo.svg" alt="">
+			<!-- arrow-mobile -->
 			<i class="fa fa-caret-down Header-mobile" aria-hidden="true"></i>
+			<!-- arrow-mobile -->
 		</header>
 		<nav class="Nav">
 			<ul class="Nav-list">
@@ -30,13 +32,13 @@
 			</ul>
 		</nav>
 		<!-- MOBILE MENU -->
-		<nav class="Mobile">
+		<nav class="Mobile" id="Mobile">
 			<div class="Mobile-header">
 				<h2 class="Mobile-title">MENU</h2>
 				<i class="fa fa-times-circle-o" aria-hidden="true"></i>
 			</div>
 			<ul class="Mobile-list">
-				<a href="#"><li class="Mobile-list-item">HOME</li></a>
+				<a href="feed.html"><li class="Mobile-list-item">HOME</li></a>
 				<a href="#"><li class="Mobile-list-item">MERCANTIL INTERNACIONAL</li></a>
 				<a href="#"><li class="Mobile-list-item">FISCAL INTERNACIONAL</li></a>
 				<a href="#"><li class="Mobile-list-item">PROPIEDAD INDUSTRIAL E INTELECTUAL</li></a>
@@ -104,5 +106,6 @@
 	
 
 <script src="https://use.fontawesome.com/574a157edd.js"></script>
+<script src="../index.js"></script>
 </body>
 </html>
