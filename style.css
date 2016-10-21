@@ -27,7 +27,7 @@ body {
   margin: 0;
   font-family: 'Merriweather', serif;
   color: #5D5A59;
-  line-height: 1.6; }
+  line-height: 1.7; }
   body .container {
     max-width: 1000px;
     margin: 0 auto; }
@@ -77,6 +77,9 @@ body {
       font-family: 'Asap', sans-serif;
       font-size: 1em;
       font-weight: 700; }
+    .Nav-list a:hover {
+      color: #690000;
+      transition: .3s; }
 
 .Principal {
   margin: 0 0 30px 0;
@@ -218,5 +221,36 @@ body {
   color: #690000;
   text-align: right;
   padding-left: 10px; }
+
+.About-title {
+  text-align: center;
+  color: #690000;
+  font-size: 2.25em;
+  margin-bottom: 30px; }
+.About-article {
+  display: flex;
+  justify-content: space-between;
+  background: #F4F5F0;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 3px 8px rgba(45, 41, 38, 0.2); }
+  .About-article-pic {
+    width: 207px;
+    height: 207px;
+    border-radius: 50%; }
+  .About-article-profile {
+    max-width: 500px; }
+    .About-article-profile-name {
+      font-size: 1.5em;
+      font-family: 'Asap';
+      text-align: center;
+      margin: 0 0 30px 0;
+      font-weight: 700; }
+    .About-article-profile-text {
+      font-size: 1.13em; }
+      .About-article-profile-text a {
+        color: #690000;
+        font-weight: 700;
+        text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */

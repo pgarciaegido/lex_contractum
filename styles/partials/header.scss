@@ -31,5 +31,9 @@
 			font-size: 1em;
 			font-weight: 700;
 		}
+		a:hover{
+			color: $red;
+			transition: .3s;
+		}
 	}
 }
