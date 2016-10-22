@@ -225,7 +225,8 @@ body {
 .Author {
   font-family: 'Asap';
   display: flex;
-  align-items: center; }
+  align-items: center;
+  text-align: center; }
   .Author-pic {
     width: 30px;
     border-radius: 50%;
@@ -242,6 +243,9 @@ body {
     content: '|';
     padding-right: 5px; }
 
+@media screen and (max-width: 500px) {
+  .Author {
+    font-size: .7em; } }
 .Feed {
   display: flex;
   justify-content: space-between;
@@ -284,14 +288,6 @@ body {
   max-width: 830px;
   margin: 0 auto; }
 
-.status {
-  font-size: 1.375em;
-  font-weight: 700;
-  font-family: 'Asap';
-  font-style: italic;
-  margin: 0 0 30px 0;
-  color: #690000; }
-
 @media screen and (max-width: 800px) {
   .status {
     margin-left: 20px; } }
@@ -323,10 +319,35 @@ body {
     border-bottom: 1px #D0C4B6 solid;
     margin-bottom: 30px; }
 
+.status {
+  font-size: 1.375em;
+  font-weight: 700;
+  font-family: 'Asap';
+  font-style: italic;
+  margin: 0 0 30px 0;
+  color: #690000; }
+
 @media screen and (max-width: 800px) {
   .Article {
     margin-right: 20px;
     margin-left: 20px; } }
+@media screen and (max-width: 500px) {
+  .Article {
+    margin-right: 15px;
+    margin-left: 15px;
+    padding: 15px; }
+    .Article-title {
+      font-size: 1.5em;
+      margin-bottom: 15px; }
+    .Article-entradilla {
+      font-size: 1.3em; }
+    .Article-text {
+      font-size: 1.1em; }
+
+  .status {
+    margin-left: 15px;
+    margin-bottom: 15px;
+    font-size: 1.3em; } }
 .Figure {
   margin-bottom: 30px;
   margin: 0 0 30px 0; }
@@ -340,6 +361,13 @@ body {
     text-align: right;
     margin: 0; }
 
+@media screen and (max-width: 500px) {
+  .Figure {
+    margin: 0 0 15px 0; }
+    .Figure-pic {
+      height: 250px; }
+    .Figure-caption {
+      font-size: .6em; } }
 .Etiqueta {
   display: flex;
   font-family: 'Asap';
@@ -353,6 +381,9 @@ body {
     text-decoration: none;
     color: #5D5A59; }
 
+@media screen and (max-width: 500px) {
+  .Etiqueta {
+    font-size: .7em; } }
 .Social {
   text-align: right; }
 

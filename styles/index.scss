@@ -37,14 +37,6 @@ body{
 	max-width:830px;
 	margin: 0 auto;
 }
-.status{
-	font-size: $h3;
-	font-weight: 700;
-	font-family: 'Asap';
-	font-style: italic;
-	margin: $margin;
-	color: $red;
-}
 
 @media screen and (max-width : 800px){
 	.status{

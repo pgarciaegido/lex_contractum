@@ -13,3 +13,16 @@
 		margin: 0;
 	}
 }
+
+@media screen and (max-width : 500px){
+	.Figure{
+		margin: 0 0 $baseline-mobile 0;
+		&-pic{
+			height: 250px;
+		}
+		&-caption{
+			font-size: .6em;
+		} 
+
+	}
+}

@@ -2,6 +2,7 @@
 	font-family: 'Asap';
 	display: flex;
 	align-items: center;
+	text-align: center;
 	&-pic{
 		width: 30px;
 		border-radius:50%;
@@ -20,5 +21,11 @@
 	span::before{
 		content: '|';
 		padding-right: 5px;
+	}
+}
+
+@media screen and (max-width : 500px){
+	.Author{
+		font-size: .7em;
 	}
 }
