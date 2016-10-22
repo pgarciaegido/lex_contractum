@@ -48,7 +48,7 @@
 }
 
 .Mobile{
-	margin: 0 auto;
+	margin: 0 $margin-mobile;
 	background: $gray-bg;
 	font-family: 'Asap';
 	padding: 10px;
@@ -57,9 +57,12 @@
 	display: block;
 	z-index: 2;
 	top: -9999px;
-	left: 10%;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
 	position: absolute;
-	// left:-999px;
+	width: 90%;
 	&-header{
 		position:relative;
 		height: 54px;
@@ -106,7 +109,7 @@
 .active-menu{
 	display:block;
 	transition: all .2s ease;
-	top: 20%;
+	top: 13%;
 }
 .hidden{
 	display: none;
