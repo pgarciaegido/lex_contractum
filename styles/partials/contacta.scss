@@ -57,3 +57,22 @@
 		}
 	}
 }
+
+@media screen and (max-width : 500px){
+	.Contacta{
+		margin-right: $margin-mobile;
+		margin-left: $margin-mobile;
+		&-title{
+			font-size: $h1-mobile;
+			margin: 0 0 $baseline-mobile 0;
+		}
+		&-formulario{
+			&-text{
+				font-size: $p-mobile;
+			}
+			button{
+				width: 40%;
+			}
+		}
+	}
+}

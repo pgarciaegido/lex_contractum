@@ -44,3 +44,33 @@
 		margin-left: $margin-tablet;
 	}
 }
+
+@media screen and (max-width : 500px){
+	.About{
+		margin-right: $margin-mobile;
+		margin-right: $margin-mobile;
+		&-title{
+			font-size: $h1-mobile;
+			margin: 0 0 $baseline-mobile 0;
+		}
+		&-article{
+			display: block;
+			margin-bottom: $baseline-mobile;
+			&-pic{
+				width: 100px;
+				height: 100px;
+				margin: 0 auto 5px auto;
+				display: block;
+			}
+			&-profile{
+				&-name{
+					margin-bottom: $baseline-mobile;
+				}
+				&-text{
+					font-size: $p-mobile;
+					margin:0;
+				}
+			}
+		}
+	}
+}

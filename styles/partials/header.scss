@@ -48,7 +48,7 @@
 }
 
 .Mobile{
-	margin: 0 10px;
+	margin: 0 auto;
 	background: $gray-bg;
 	font-family: 'Asap';
 	padding: 10px;
@@ -60,10 +60,9 @@
 	left: 10%;
 	position: absolute;
 	// left:-999px;
-
-
 	&-header{
 		position:relative;
+		height: 54px;
 	}
 	&-title{
 		color: $red;
@@ -134,7 +133,6 @@
 @media screen and (max-width : 500px){
 	.Header{
 		// el icono es algo más alto
-		margin-bottom: 10px;
 		&-logo{
 			margin-bottom: 0;
 		}
