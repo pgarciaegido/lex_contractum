@@ -38,6 +38,24 @@
 
 @media screen and (max-width : 500px){
 	.Principal{
-		display:none;
+		height: auto;
+		margin: 0 $margin-mobile $baseline-mobile $margin-mobile;
+		&-pic{
+			height: 250px;
+		}
+		&-desc{
+			position:static;
+			width: auto;
+			background-color: $white;
+		}
 	}
+	.Autor{
+		&-pic{
+			display:none;
+		}
+	}
+}
+
+#aut-pic{
+	display: none;
 }

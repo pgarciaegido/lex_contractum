@@ -2,10 +2,10 @@ var $arrow = document.getElementById('logo');
 var $menu = document.getElementById('Mobile');
 var $body = document.getElementById('body');
 var $darkbg = document.getElementById('darkbg');
+var $close = document.getElementById('Mobile-close');
 
 
-
-
+	
 function showMenu(){
 	$menu.classList.add('active-menu');
 	$body.classList.add('overflow');
@@ -20,5 +20,4 @@ function removeMenu(){
 
 $arrow.addEventListener('touchstart', showMenu);
 $darkbg.addEventListener('touchstart', removeMenu);
-// cambiar este por el icono de la X
-// $arrow.addEventListener('touchstart',removeMenu);
+$close.addEventListener('touchstart',removeMenu);

@@ -17,7 +17,8 @@
 				padding-bottom: 15px;
     		margin-bottom: 15px;
     		border-bottom: 1px $beige solid;
-    		line-height: $lh-title; 
+    		line-height: $lh-title;
+    		color: $black;
 			}
 		}
 	}
@@ -31,5 +32,18 @@
 			width:48%;
 		}
 	}
-	
 }
+
+@media screen and (max-width : 500px){
+	.Feed{
+		display:block;
+		margin: 0 $margin-mobile $baseline-mobile $margin-mobile;
+		&-article{
+			width: auto;
+			&-pic{
+				height: 250px;
+			}
+		}
+	}
+}
+
