@@ -1,4 +1,4 @@
-var $arrow = document.getElementById('logo');
+var $arrow = document.getElementById('arrow');
 var $menu = document.getElementById('Mobile');
 var $body = document.getElementById('body');
 var $darkbg = document.getElementById('darkbg');

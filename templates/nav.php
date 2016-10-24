@@ -4,5 +4,5 @@
 				'container' => 'nav',
 				'container_class' => 'menu'
 			)
-		); 
+		);
 ?>

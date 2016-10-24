@@ -1,10 +1,10 @@
 .Figure{
 	margin-bottom: $baseline;
 	margin: $margin;
-	&-pic{
+	img{
 		width: 100%;
 		text-align: center;
-		height: 380px;
+		height: auto;
 	}
 	&-caption{
 		font-size: .8em;
@@ -17,9 +17,6 @@
 @media screen and (max-width : 500px){
 	.Figure{
 		margin: 0 0 $baseline-mobile 0;
-		&-pic{
-			height: 250px;
-		}
 		&-caption{
 			font-size: .6em;
 		} 

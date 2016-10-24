@@ -4,7 +4,9 @@ add_theme_support('post-thumbnails'); //Añade imagen destacada
 
 
 function wpdocs_theme_setup() {
-    add_image_size( 'feed-thumb', 303, 202, true ); 
+    add_image_size( 'feed-thumb', 303, 202, true );
+    add_image_size( 'article', 770);
+
 }
 
 add_action( 'after_setup_theme', 'wpdocs_theme_setup' );

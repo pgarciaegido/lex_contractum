@@ -10,6 +10,7 @@
 		margin: $margin;
 		line-height: $lh-title;
 		color: $black;
+		word-wrap: break-word;
 	}
 	&-info{
 		display:flex;

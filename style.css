@@ -315,7 +315,8 @@ body {
     font-weight: 700;
     margin: 0 0 30px 0;
     line-height: 1.325em;
-    color: #2D2926; }
+    color: #2D2926;
+    word-wrap: break-word; }
   .Article-info {
     display: flex;
     justify-content: space-between;
@@ -364,10 +365,10 @@ body {
 .Figure {
   margin-bottom: 30px;
   margin: 0 0 30px 0; }
-  .Figure-pic {
+  .Figure img {
     width: 100%;
     text-align: center;
-    height: 380px; }
+    height: auto; }
   .Figure-caption {
     font-size: .8em;
     font-style: italic;
@@ -377,8 +378,6 @@ body {
 @media screen and (max-width: 500px) {
   .Figure {
     margin: 0 0 15px 0; }
-    .Figure-pic {
-      height: 250px; }
     .Figure-caption {
       font-size: .6em; } }
 .Etiqueta {

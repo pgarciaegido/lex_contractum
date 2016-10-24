@@ -12,7 +12,7 @@
 					<div class="Feed-article-text">				
 						<a href="<?php echo get_permalink(); ?>"><h2 class="Feed-article-text-title"><?php the_title(); ?></h2></a>
 						<div class="Author">
-							<h4 class="Author-name"><?php the_author(); ?> <span class="Author-date"><?php the_date(); ?></span></h4>
+							<h4 class="Author-name"><?php the_author(); ?> <span class="Author-date"><?php echo get_the_date(); ?></span></h4>
 						</div>
 					</div>
 				</article>
