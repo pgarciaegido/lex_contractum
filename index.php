@@ -1,34 +1,27 @@
 <?php get_header(); ?>
-<body>
-	<header>
-		<h1><?php bloginfo ('name'); ?></h1>
-		<h2><?php bloginfo ('description')?></h2>
-	</header>
+
 <?php include TEMPLATEPATH . "/templates/nav.php" ?>
-	<?php
-		dynamic_sidebar('sidebar_footer');
-	?>
-	<section class="content">
-		<?php rewind_posts(); ?>
-		<?php query_posts('posts_per_pages=1'); ?>
+	
+<section class="Feed">
+<?php rewind_posts(); ?>
 
-		<?php if(have_posts()) : while (have_posts() ) : the_post(); ?>
-			<article>
-				<header>
-					<figure>
-						<?php the_post_thumbnail('feedMobile'); ?> <!-- nos da el tamaño de las imagenes -->
-					</figure>
-					<h3><?php the_title(); ?></h3>
-				</header>
-				<?php the_excerpt(); ?> <!-- imprime un resumen -->
-				<?php the_author(); ?> -
-				<?php the_date(); ?>
-			</article>
-		
-		<?php endwhile; ?>
-
-		<?php else: ?>
-			<h3>No hay entradas :(</h3>
-		<?php endif;?>
-	</section>
-<?php get_footer('main'); ?>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+				<div class="Feed-wrapper">
+				<article class="Feed-article">
+					<figure><?php the_post_thumbnail('feed-thumb'); ?></figure>
+					<div class="Feed-article-text">				
+						<a href="<?php echo get_permalink(); ?>"><h2 class="Feed-article-text-title"><?php the_title(); ?></h2></a>
+						<div class="Author">
+							<h4 class="Author-name"><?php the_author(); ?> <span class="Author-date"><?php the_date(); ?></span></h4>
+						</div>
+					</div>
+				</article>
+				</div>
+<?php endwhile; ?>
+<!-- post navigation -->
+<?php else: ?>
+	<h3>not found</h3>
+<!-- no posts found -->
+<?php endif; ?>
+</section>
+<?php get_footer(); ?>
