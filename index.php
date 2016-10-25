@@ -5,6 +5,7 @@
 	
 <section class="Feed">
 <?php rewind_posts(); ?>
+<!-- shows up to 10 posts, but not the first one -->
 <?php $query_args = array(
     "posts_per_page" => "10",
     "offset" => "1",
@@ -27,6 +28,7 @@
 <?php endwhile; ?>
 <!-- post navigation -->
 <?php else: ?>
+	<!-- include here 404 -->
 	<h3>not found</h3>
 <!-- no posts found -->
 <?php endif; ?>

@@ -302,17 +302,18 @@ body {
 
 @media screen and (max-width: 1024px) {
   .Feed-wrapper {
-    width: 45%;
-    margin: 0 auto; } }
+    width: 45.8%; } }
 @media screen and (max-width: 800px) {
   .Feed {
     margin-right: 20px;
-    margin-left: 20px; }
-    .Feed-wrapper {
-      margin: 0 auto; } }
+    margin-left: 20px; } }
+@media screen and (max-width: 767px) {
+  .Feed-wrapper {
+    width: 44%; } }
 @media screen and (max-width: 690px) {
   .Feed-wrapper {
-    width: 100%; } }
+    width: 100%;
+    margin: 0 auto; } }
 @media screen and (max-width: 500px) {
   .Feed {
     display: block;

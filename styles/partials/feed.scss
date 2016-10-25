@@ -39,8 +39,7 @@
 @media screen and (max-width: 1024px){
 	.Feed{
 		&-wrapper{
-			width:45%;
-			margin: 0 auto;
+			width:45.8%;
 		}
 	}
 }
@@ -49,8 +48,13 @@
 	.Feed{
 		margin-right: $margin-tablet;
 		margin-left: $margin-tablet;
+	}
+}
+
+@media screen and (max-width : 767px){
+	.Feed{
 		&-wrapper{
-			margin: 0 auto;
+			width: 44%;
 		}
 	}
 }
@@ -59,6 +63,7 @@
 	.Feed{
 		&-wrapper{
 			width: 100%;
+			margin: 0 auto;
 		}
 	}
 }
