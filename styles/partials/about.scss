@@ -42,6 +42,18 @@
 	.About{
 		margin-right: $margin-tablet;
 		margin-left: $margin-tablet;
+		&-article{
+			display: block;
+			&-pic{
+				margin: 0 auto 5px auto;
+				width: 150px;
+				height: 150px;
+				display: block;
+			}
+			&-profile{
+				max-width: auto;
+			}
+		}
 	}
 }
 

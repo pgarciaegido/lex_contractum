@@ -4,7 +4,12 @@
 		<?php rewind_posts(); ?>
 
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-		<h3 class="status"><?php echo get_the_category(); ?></h3>
+			
+			<h3 class="status"><?php $categories = get_the_category();
+				if ( ! empty( $categories ) ) {
+    		echo esc_html( $categories[0]->name );
+    		}?>
+    	</h3>
 			<article class="Article">
 				<h1 class="Article-title"><?php the_title(); ?></h1>
 				<figure class="Figure">				
@@ -18,7 +23,11 @@
 					</div>		
 					<div class="Etiqueta">
 						<i class="fa fa-bookmark" aria-hidden="true"></i>
-						<h4 class="Etiqueta-name"><a href="#"><?php echo get_the_category(); ?></a></h4>
+						<h4 class="Etiqueta-name"><a href="#"><?php $categories = get_the_category();
+							if ( ! empty( $categories ) ) {
+    					echo esc_html( $categories[0]->name );
+    					}?></a>
+    				</h4>
 					</div>
 				</div>
 				<p class="Article-text"><?php echo get_the_content(); ?></p>

@@ -1,14 +1,12 @@
 <?php get_header(); ?>
 
 <?php include TEMPLATEPATH . "/templates/nav.php" ?>
-
+<h3 class="status">MERCANTIL INTERNACIONAL</h3>	
 <section class="Feed">
 	<?php rewind_posts(); ?>
 
 
 	<?php if(have_posts()) : while (have_posts() ) : the_post(); ?>
-		<?php $cat_id= get_cat_ID() ?>
-		<h3 class="status"><?php echo get_cat_name($cat_id)?></h3>	
 		<div class="Feed-wrapper">
 				<article class="Feed-article">
 					<figure><?php the_post_thumbnail('feed-thumb'); ?></figure>

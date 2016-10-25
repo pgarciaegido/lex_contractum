@@ -17,9 +17,9 @@
 			<i class="fa fa-search" aria-hidden="true"></i>
 		</div>
 		<header class="Header">
-			<a href="localhost/lexcontractum"><img class="Header-logo" id="logo" src="<?php bloginfo('template_url'); ?>/images/logo.svg" alt=""></a>
+			<a href=""><img class="Header-logo" id="logo" src="<?php bloginfo('template_url'); ?>/images/logo.svg" alt=""></a>
 			<!-- arrow-mobile -->
-			<i class="fa fa-caret-down Header-mobile" id="arrow" aria-hidden="true"></i>
+			<div id="arrow" class="Header-mobile"></div>
 			<!-- arrow-mobile -->
 		</header>
 				<!-- MOBILE MENU -->

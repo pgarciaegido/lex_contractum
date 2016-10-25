@@ -1,9 +1,9 @@
 .Feed{
 	display: flex;
-	justify-content: space-between;
   flex-wrap: wrap;
   &-wrapper{
   	width: 30.33%;
+  	padding: 0 15px;
   }
   a{
   	text-decoration:none;
@@ -36,12 +36,29 @@
 	}
 }
 
+@media screen and (max-width: 1024px){
+	.Feed{
+		&-wrapper{
+			width:45%;
+			margin: 0 auto;
+		}
+	}
+}
+
 @media screen and (max-width : 800px){
 	.Feed{
 		margin-right: $margin-tablet;
 		margin-left: $margin-tablet;
 		&-wrapper{
-			width:48%;
+			margin: 0 auto;
+		}
+	}
+}
+
+@media screen and (max-width : 690px){
+	.Feed{
+		&-wrapper{
+			width: 100%;
 		}
 	}
 }
