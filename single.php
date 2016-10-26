@@ -23,7 +23,14 @@
 					</div>		
 					<div class="Etiqueta">
 						<i class="fa fa-bookmark" aria-hidden="true"></i>
-						<h4 class="Etiqueta-name"><a href="#"><?php $categories = get_the_category();
+						<?php
+						    // Get the ID of a given category
+						    $category_id = get_cat_ID( get_the_category(); );
+						 
+						    // Get the URL of this category
+						    $category_link = get_category_link( $category_id );
+						?>
+						<h4 class="Etiqueta-name"><a href=""><?php $categories = get_the_category();
 							if ( ! empty( $categories ) ) {
     					echo esc_html( $categories[0]->name );
     					}?></a>

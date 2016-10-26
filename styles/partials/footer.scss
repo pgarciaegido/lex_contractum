@@ -1,0 +1,68 @@
+
+#footer-bg{
+	background-color: $gray-txt;
+	font-family: 'Asap';
+	position: relative;
+}
+.Footer{
+	padding: $baseline 0;
+	display: flex;
+	color: $white;
+
+	&-derecha{
+		margin-right: 100px;
+		width: 30%;
+	}
+	&-logo{
+		width: 100%;
+		margin-bottom: 75px;
+	}
+	a{
+		text-decoration: none;
+	}
+	&-menu{
+		display: flex;
+		justify-content: space-between;
+		width: auto;
+		margin-top: 30px;
+		&-list{
+			padding:0;
+			margin: 0;
+		}
+		&-list:first-child{
+			margin-right: 100px;
+		}
+		&-item{
+			color: $white;
+			text-decoration: none;
+			list-style-type: none;
+			font-size: 0.7em;
+			padding-bottom: 10px;
+			
+		}
+	}
+	&-copy{
+		font-size: .7em;
+		margin:0;
+		text-align: center;
+
+	}
+	&-autor{
+		color: $white;
+		position: absolute;
+		bottom:10px;
+		right: 20px;
+		text-align: center;
+
+		&-texto{
+			font-size: .5em;
+			margin: 0;
+			text-align: center;
+			text-decoration: none;
+			color: $white;
+		}
+		&-logo{
+			width:40px;
+		}
+	}
+}

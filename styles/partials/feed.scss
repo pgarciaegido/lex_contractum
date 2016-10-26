@@ -1,6 +1,7 @@
 .Feed{
 	display: flex;
   flex-wrap: wrap;
+  margin-bottom: $baseline;
   &-wrapper{
   	width: 30.33%;
   	padding: 0 15px;

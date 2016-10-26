@@ -18,7 +18,7 @@
 			<i class="fa fa-search" aria-hidden="true"></i>
 		</div>
 		<header class="Header">
-			<a href=""><img class="Header-logo" id="logo" src="<?php bloginfo('template_url'); ?>/images/logo.svg" alt=""></a>
+			<a href="http://lexcontractus.es"><img class="Header-logo" id="logo" src="<?php bloginfo('template_url'); ?>/images/logo.svg" alt="Logo"></a>
 			<!-- arrow-mobile -->
 			<div id="arrow" class="Header-mobile"></div>
 			<!-- arrow-mobile -->
@@ -30,12 +30,12 @@
 				<i id="Mobile-close" class="fa fa-times-circle-o" aria-hidden="true"></i>
 			</div>
 			<ul class="Mobile-list">
-				<a href="feed.html"><li class="Mobile-list-item">HOME</li></a>
-				<a href="#"><li class="Mobile-list-item">MERCANTIL INTERNACIONAL</li></a>
-				<a href="#"><li class="Mobile-list-item">FISCAL INTERNACIONAL</li></a>
-				<a href="#"><li class="Mobile-list-item">PROPIEDAD INDUSTRIAL E INTELECTUAL</li></a>
-				<a href="#"><li class="Mobile-list-item">¿QUIENES SOMOS?</li></a>
-				<a href="#"><li class="Mobile-list-item">CONTACTO</li></a>
+				<a href="lexcontractus.es"><li class="Mobile-list-item">HOME</li></a>
+				<a href="http://lexcontractus.es/category/mercantil/"><li class="Mobile-list-item">MERCANTIL INTERNACIONAL</li></a>
+				<a href="http://lexcontractus.es/category/fiscal-internacional/"><li class="Mobile-list-item">FISCAL INTERNACIONAL</li></a>
+				<a href="http://lexcontractus.es/category/propiedad-industrial-e-intelectual/"><li class="Mobile-list-item">PROPIEDAD INDUSTRIAL E INTELECTUAL</li></a>
+				<a href="http://lexcontractus.es/quienes-somos/"><li class="Mobile-list-item">¿QUIENES SOMOS?</li></a>
+				<a href="http://lexcontractus.es/contacta/"><li class="Mobile-list-item">CONTACTO</li></a>
 			</ul>
 		</nav>
 		<!-- MOBILE-MENU -->

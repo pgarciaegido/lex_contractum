@@ -38,15 +38,10 @@ body{
 	margin: 0 auto;
 }
 
-@media screen and (max-width : 800px){
-	.status{
-		margin-left: $margin-tablet;
-	}
-}
-
 @import 'partials/article';
 @import 'partials/figure';
 @import 'partials/etiqueta';
 @import 'partials/social';
 @import 'partials/about';
 @import 'partials/contacta';
+@import 'partials/footer';
