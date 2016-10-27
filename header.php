@@ -30,7 +30,7 @@
 				<i id="Mobile-close" class="fa fa-times-circle-o" aria-hidden="true"></i>
 			</div>
 			<ul class="Mobile-list">
-				<a href="lexcontractus.es"><li class="Mobile-list-item">HOME</li></a>
+				<a href="http://lexcontractus.es"><li class="Mobile-list-item">HOME</li></a>
 				<a href="http://lexcontractus.es/category/mercantil/"><li class="Mobile-list-item">MERCANTIL INTERNACIONAL</li></a>
 				<a href="http://lexcontractus.es/category/fiscal-internacional/"><li class="Mobile-list-item">FISCAL INTERNACIONAL</li></a>
 				<a href="http://lexcontractus.es/category/propiedad-industrial-e-intelectual/"><li class="Mobile-list-item">PROPIEDAD INDUSTRIAL E INTELECTUAL</li></a>

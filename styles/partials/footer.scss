@@ -45,7 +45,9 @@
 		font-size: .7em;
 		margin:0;
 		text-align: center;
-
+	}
+	&-copymob{
+		display: none;
 	}
 	&-autor{
 		color: $white;
@@ -63,6 +65,58 @@
 		}
 		&-logo{
 			width:40px;
+		}
+	}
+}
+
+@media screen and (max-width: 900px){
+	.Footer{
+		display:block;
+		&-derecha{
+			width: auto;
+			margin: 0;
+		}
+		&-logo{
+			display: block;
+			margin: 0 auto;
+			width: 50%;
+		}
+		&-copy{
+			display: none;
+		}
+		&-copymob{
+			display: block;
+			text-align: center;
+			font-size: .6em;
+		}
+		&-menu{
+			justify-content: center;
+			&-list:first-child{
+				margin-right: 50px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 500px){
+	.Footer{
+		&-menu{
+			margin-left: $margin-mobile;
+			&-list:first-child{
+				margin-right: 50px;
+    		margin-left: 20px;
+			}
+			&-item{
+				font-size: .6em;
+			}
+		}
+		&-autor{
+			&-texto{
+				font-size: .4em;
+			}
+			&-logo{
+				width:35px;
+			}
 		}
 	}
 }

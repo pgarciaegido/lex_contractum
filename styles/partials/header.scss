@@ -175,3 +175,13 @@
     display: block;
 	}
 }
+
+@media screen and (max-width : 400px){
+	.Mobile{
+		&-list{
+			&-item{
+				margin-bottom: 7px;
+			}
+		}
+	}
+}

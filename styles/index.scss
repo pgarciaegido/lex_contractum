@@ -15,11 +15,15 @@ body{
 	font-family: 'Merriweather', serif;
 	color: $gray-txt;
 	line-height: 1.7;
+
 	.container{
 		max-width: 1000px;
 		margin: 0 auto;
 	}
 }
+
+
+
 /*
 *FEED
 */
@@ -42,6 +46,17 @@ body{
 @import 'partials/figure';
 @import 'partials/etiqueta';
 @import 'partials/social';
+
+/*
+*PAGES
+*/
+
 @import 'partials/about';
 @import 'partials/contacta';
+
+/*
+*OTHERS
+*/
+
 @import 'partials/footer';
+@import 'partials/404'

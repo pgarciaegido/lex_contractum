@@ -22,6 +22,7 @@
 				<img src="<?php bloginfo('template_url'); ?>/images/pegido.svg" alt="Pablo Egido" class="Footer-autor-logo"></a>
 			</div>
 		</nav>
+		<p class="Footer-copymob">Lex Contractus | 2016</p>
 	</footer>
 	</div>
 </div>
