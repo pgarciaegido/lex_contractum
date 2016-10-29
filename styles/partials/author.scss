@@ -24,8 +24,26 @@
 	}
 }
 
+//Clase wordpress
+.avatar{
+	width: 30px;
+	border-radius:50%;
+	height: 30px;
+	padding-right: 5px;
+}
+
 @media screen and (max-width : 500px){
 	.Author{
 		font-size: .7em;
+	}
+}
+
+@media screen and (max-width : 400px){
+	.Author{
+		font-size: .65em;
+	}
+	.avatar{
+		width: 25px;
+		height: 25px;
 	}
 }

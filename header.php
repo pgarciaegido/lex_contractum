@@ -10,6 +10,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Asap:400,400i,700,700i|Merriweather:400,400i,700" rel="stylesheet">
 </head>
 <body id="body">
+<?php include_once("analyticstracking.php") ?>
 <div class="darkbg" id="darkbg"></div>
 <!-- HEADER -->
 	<div class="container">

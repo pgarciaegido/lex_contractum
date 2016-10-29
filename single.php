@@ -18,12 +18,12 @@
 				</figure>
 				<div class="Article-info">
 					<div class="Author">
-						<img class="Author-pic" src="<?php echo get_avatar_url(); ?>" alt="">
+						<?php echo get_avatar(get_the_author_meta( 'ID' )); ?>
 						<h4 class="Author-name"><?php the_author(); ?> <span class="Author-date"><?php the_date(); ?></span></h4>
 					</div>		
 					<div class="Etiqueta">
 						<i class="fa fa-bookmark" aria-hidden="true"></i>
-						<h4 class="Etiqueta-name"><a href="#"><?php $categories = get_the_category();
+						<h4 class="Etiqueta-name"><a href="<?php get_category_link(); ?>"><?php $categories = get_the_category();
 							if ( ! empty( $categories ) ) {
     					echo esc_html( $categories[0]->name );
     					}?></a>

@@ -52,5 +52,6 @@
 		$close.addEventListener('touchstart',removeMenu);
 
 </script>
+<?php wp_footer ?>
 </body>
 </html> 
