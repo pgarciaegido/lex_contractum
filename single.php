@@ -23,7 +23,7 @@
 					</div>		
 					<div class="Etiqueta">
 						<i class="fa fa-bookmark" aria-hidden="true"></i>
-						<h4 class="Etiqueta-name"><a href="<?php get_category_link(); ?>"><?php $categories = get_the_category();
+						<h4 class="Etiqueta-name"><a href="<?php get_category_link( $category_id ); ?>"><?php $categories = get_the_category();
 							if ( ! empty( $categories ) ) {
     					echo esc_html( $categories[0]->name );
     					}?></a>
@@ -37,7 +37,8 @@
 		<?php else: ?>
 		<!-- no posts found -->
 		<?php endif; ?>
-			
+			<?php
+// action hook for any content placed after the content, including the widget area
 <!-- 				<div class="Social">
 					<i class="fa fa-linkedin-square" aria-hidden="true"></i>
 					<i class="fa fa-twitter-square" aria-hidden="true"></i>

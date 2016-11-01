@@ -53,5 +53,7 @@
 
 </script>
 <?php wp_footer ?>
+<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
 </body>
 </html> 

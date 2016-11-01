@@ -16,7 +16,7 @@
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<div class="Feed-wrapper">
 				<article class="Feed-article">
-					<figure><?php the_post_thumbnail('feed-thumb'); ?></figure>
+					<figure><?php the_post_thumbnail(); ?></figure>
 					<div class="Feed-article-text">				
 						<a href="<?php echo get_permalink(); ?>"><h2 class="Feed-article-text-title"><?php the_title(); ?></h2></a>
 						<div class="Author">
