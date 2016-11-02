@@ -17,7 +17,6 @@ function removeMenu(){
 	$body.classList.remove('overflow');
 	$darkbg.classList.remove('active');
 }
-
 $arrow.addEventListener('touchstart', showMenu);
 $darkbg.addEventListener('touchstart', removeMenu);
 $close.addEventListener('touchstart',removeMenu);

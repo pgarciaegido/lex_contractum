@@ -1,5 +1,29 @@
 <?php
 
+//Loads styles and js
+
+function startwordpress_scripts(){
+    wp_enqueue_style('styles', get_template_directory_uri() . '/style.css');
+    wp_enqueue_script('menu', get_template_directory_uri() . '/index.js', array(), null, true);
+}
+
+add_action( 'wp_enqueue_scripts', 'startwordpress_scripts' );
+
+//Loads google fonts.
+
+function startwordpress_google_fonts(){
+
+    wp_register_style('Fonts', 'https://fonts.googleapis.com/css?family=Asap:400,400i,700,700i|Merriweather:400,400i,700');
+    wp_enqueue_style('Fonts');
+}
+
+add_action('wp_print_styles', 'startwordpress_google_fonts');
+
+// WordPress Titles
+add_theme_support( 'title-tag' );
+
+
+
 add_theme_support('post-thumbnails'); //Añade imagen destacada
 
 

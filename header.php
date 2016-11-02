@@ -6,10 +6,6 @@
 	<title><?php bloginfo('description'); ?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="google-site-verification" content="zyv_UUMim3J97jY6uvD6Y0FVl5vfgnojTko7eF9EZRE" />
-
-	<link rel="stylesheet" href="<?php bloginfo(stylesheet_url) ?>">
-	<link href="https://fonts.googleapis.com/css?family=Asap:400,400i,700,700i|Merriweather:400,400i,700" rel="stylesheet">
-
 	<?php wp_head(); ?>
 </head>
 <body id="body">
