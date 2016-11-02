@@ -14,10 +14,10 @@
 <div class="darkbg" id="darkbg"></div>
 <!-- HEADER -->
 	<div class="container">
-		<div class="Buscar">
+		<form class="Buscar" action="searchpage.php">
 			<input type="text" class="Buscar-input">
 			<i class="fa fa-search" aria-hidden="true"></i>
-		</div><!--BUSCAR-->
+		</form><!--BUSCAR-->
 		<header class="Header">
 			<a href="<?php bloginfo( 'wpurl' );?>"><img class="Header-logo" id="logo" src="<?php bloginfo('template_url'); ?>/images/logo.svg" alt="Logo"></a>
 			<!-- arrow-mobile -->
