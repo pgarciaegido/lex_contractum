@@ -31,6 +31,9 @@
 					</div>
 				</div>
 				<p class="Article-text"><?php echo get_the_content(); ?></p>
+				<?php include TEMPLATEPATH . "/templates/social.php" ?>
+				</article>
+					</div>
 				</div>
 		<?php endwhile; ?>
 		
@@ -38,11 +41,5 @@
 		<!-- no posts found -->
 		<?php endif; ?>
 			
-<!-- 				<div class="Social">
-					<i class="fa fa-linkedin-square" aria-hidden="true"></i>
-					<i class="fa fa-twitter-square" aria-hidden="true"></i>
-					<i class="fa fa-facebook-square" aria-hidden="true"></i>
-				</div>
-			</article>
-		</div> -->
+				
 <?php get_footer(); ?>
