@@ -14,8 +14,8 @@
 <div class="darkbg" id="darkbg"></div>
 <!-- HEADER -->
 	<div class="container">
-		<form class="Buscar" action="searchpage.php">
-			<input type="text" class="Buscar-input">
+		<form class="Buscar">
+			<input type="text" id="buscar" class="Buscar-input">
 			<i class="fa fa-search" aria-hidden="true"></i>
 		</form><!--BUSCAR-->
 		<header class="Header">

@@ -21,7 +21,7 @@
 	<?php endwhile; ?>
 
 		<?php else: ?>
-			<h3 class="Error">No hay entradas :(</h3>
+			
 		<?php endif;?>
 	</section>
 <?php get_footer(); ?>

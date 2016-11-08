@@ -1,0 +1,68 @@
+.Search{
+	&-status{
+		font-family: 'Asap';
+		color: $red;
+		font-weight:700;
+		font-style: italic;
+	}
+	&-result{
+		background-color: $white;
+		border-radius: 5px;
+		padding: 10px;
+		box-shadow: $box-shadow;
+		margin-bottom: $baseline;
+		width: auto;
+		&-a{	
+			display: flex;
+			text-decoration: none;
+			color: $gray-txt;
+		}
+		&-img{
+			width: 100px;
+			height: 100px;
+			border-radius: 5px;
+			margin-right: 50px;
+		}
+		&-details{
+			margin-right: 50px;
+			&-title{
+				font-size: $h3;
+				margin: 0;
+			}
+			&-more{
+				display: flex;;
+				&-author{
+					margin-right: 50px;
+				}
+			}
+		}
+	}
+	&-not{
+		&-text{
+			margin-bottom: 50vh;
+		}
+	}
+}
+
+
+@media screen and (max-width : 800px){
+	.Search{
+		margin: 0 $margin-tablet;
+	}
+}
+
+@media screen and (max-width : 500px){
+	.Search{
+		margin: 0 $margin-mobile;
+		&-result{
+			&-img{
+				display: none;
+			}
+			&-details{
+				&-more{
+					font-size: .9em;
+				}
+			}
+		}
+	}
+}
