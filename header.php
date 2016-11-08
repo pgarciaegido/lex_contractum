@@ -16,7 +16,7 @@
 	<div class="container">
 		<form class="Buscar">
 			<input type="text" id="buscar" class="Buscar-input">
-			<i class="fa fa-search" aria-hidden="true"></i>
+			<i class="fa fa-search" id="buscarIcon" aria-hidden="true"></i>
 		</form><!--BUSCAR-->
 		<header class="Header">
 			<a href="<?php bloginfo( 'wpurl' );?>"><img class="Header-logo" id="logo" src="<?php bloginfo('template_url'); ?>/images/logo.svg" alt="Logo"></a>

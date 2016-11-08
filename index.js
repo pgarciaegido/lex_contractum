@@ -4,7 +4,7 @@ var $body = document.getElementById('body');
 var $darkbg = document.getElementById('darkbg');
 var $close = document.getElementById('Mobile-close');
 var $buscar = document.getElementById('buscar');
-
+var $buscarMob = document.getElementById('buscarIcon');
 	
 function showMenu(){
 	$menu.classList.add('active-menu');
@@ -27,7 +27,12 @@ function search(e){
 	}
 }
 
+function searchMobile(){
+	$buscar.style.cssText = 'display:' + 'inline' + '; width:' + '80%;';
+}
+
 $arrow.addEventListener('touchstart', showMenu);
 $darkbg.addEventListener('touchstart', removeMenu);
 $close.addEventListener('touchstart',removeMenu);
 $buscar.addEventListener('keydown', search);
+$buscarMob.addEventListener('touchstart', searchMobile);
