@@ -20,7 +20,7 @@ function removeMenu(){
 
 function search(e){
 	if(e.keyCode === 13){
-		event.preventDefault();
+		event.preventDefault(e);
 		var result = $buscar.value;
 		var link = '?s='+ result;
 		location.href=link;
@@ -35,7 +35,10 @@ function stickyFooter(){
 	var element = document.getElementById('container');
 	var height = element.offsetHeight;
 	if (height < screen.height -300){
-	    document.getElementById("footer-bg").classList.add('stikybottom');
+	  document.getElementById("footer-bg").classList.add('stikybottom');
+	}
+	else{
+		document.getElementById("footer-bg").style.cssText = 'position:' + 'relative;';
 	}
 }
 
