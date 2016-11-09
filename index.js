@@ -31,8 +31,18 @@ function searchMobile(){
 	$buscar.style.cssText = 'display:' + 'inline' + '; width:' + '80%;';
 }
 
+function stickyFooter(){
+	var element = document.getElementById('container');
+	var height = element.offsetHeight;
+	if (height < screen.height -300){
+	    document.getElementById("footer-bg").classList.add('stikybottom');
+	}
+}
+
 $arrow.addEventListener('touchstart', showMenu);
 $darkbg.addEventListener('touchstart', removeMenu);
 $close.addEventListener('touchstart',removeMenu);
 $buscar.addEventListener('keydown', search);
 $buscarMob.addEventListener('touchstart', searchMobile);
+
+document.addEventListener("DOMContentLoaded", stickyFooter, false);

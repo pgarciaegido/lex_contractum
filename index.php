@@ -29,7 +29,6 @@
 <!-- post navigation -->
 <?php else: ?>
 	<!-- include here 404 -->
-	<h3>not found</h3>
 <!-- no posts found -->
 <?php endif; ?>
 </section>

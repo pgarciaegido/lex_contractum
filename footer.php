@@ -9,7 +9,7 @@
 		<nav class="Footer-menu">
 			<ul class="Footer-menu-list">
 				<a href="lexcontractus.es"><li class="Footer-menu-item">HOME</li></a>
-				<a href="http://lexcontractus.es/category/mercantil/"><li class="Footer-menu-item">MERCANTIL INTERNACIONAL</li></a>
+				<a href="http://lexcontractus.es/category/mercantil/"><li class="Footer-menu-item">MERCANTIL</li></a>
 				<a href="http://lexcontractus.es/category/fiscal-internacional/"><li class="Footer-menu-item">FISCAL INTERNACIONAL</li></a>
 			</ul>
 			<ul class="Footer-menu-list">

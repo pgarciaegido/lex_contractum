@@ -22,6 +22,6 @@
 	<?php endwhile; ?>
 	<!-- post navigation -->
 	<?php else: ?>
-	anything found
+	<p>En construcción<p>
 	<?php endif; ?>
 </figure>

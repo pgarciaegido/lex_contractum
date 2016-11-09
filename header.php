@@ -12,7 +12,7 @@
 <?php include_once("analyticstracking.php") ?>
 <div class="darkbg" id="darkbg"></div>
 <!-- HEADER -->
-	<div class="container">
+	<div class="container" id="container">
 		<form class="Buscar">
 			<input type="text" id="buscar" class="Buscar-input">
 			<i class="fa fa-search" id="buscarIcon" aria-hidden="true"></i>
@@ -31,7 +31,7 @@
 			</div>
 			<ul class="Mobile-list">
 				<a href="http://lexcontractus.es"><li class="Mobile-list-item">HOME</li></a>
-				<a href="http://lexcontractus.es/category/mercantil/"><li class="Mobile-list-item">MERCANTIL INTERNACIONAL</li></a>
+				<a href="http://lexcontractus.es/category/mercantil/"><li class="Mobile-list-item">MERCANTIL</li></a>
 				<a href="http://lexcontractus.es/category/fiscal-internacional/"><li class="Mobile-list-item">FISCAL INTERNACIONAL</li></a>
 				<a href="http://lexcontractus.es/category/propiedad-industrial-e-intelectual/"><li class="Mobile-list-item">PROPIEDAD INDUSTRIAL E INTELECTUAL</li></a>
 				<a href="http://lexcontractus.es/quienes-somos/"><li class="Mobile-list-item">¿QUIENES SOMOS?</li></a>

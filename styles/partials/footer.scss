@@ -1,9 +1,11 @@
 
+
 #footer-bg{
 	background-color: $gray-txt;
 	font-family: 'Asap';
-	position: relative;
+	// position: relative;
 }
+
 .Footer{
 	padding: $baseline 0;
 	display: flex;
@@ -67,6 +69,13 @@
 			width:40px;
 		}
 	}
+}
+
+.stikybottom {
+    position: fixed;
+    bottom:0;
+    left: 0;
+    right:0;
 }
 
 @media screen and (max-width: 900px){

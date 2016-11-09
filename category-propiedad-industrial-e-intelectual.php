@@ -21,7 +21,6 @@
 	<?php endwhile; ?>
 
 		<?php else: ?>
-
 		<?php endif;?>
 	</section>
 <?php get_footer(); ?>
