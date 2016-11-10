@@ -22,8 +22,8 @@ function search(e){
 	if(e.keyCode === 13){
 		event.preventDefault(e);
 		var result = $buscar.value;
-		var link = '?s='+ result;
-		location.href=link;
+		var link = 'http://lexcontractus.es/?s='+ result;
+		location.href= link;
 	}
 }
 
