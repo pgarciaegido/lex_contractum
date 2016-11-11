@@ -4,7 +4,7 @@
 
 function startwordpress_scripts(){
     wp_enqueue_style('styles', get_template_directory_uri() . '/style.css');
-    wp_enqueue_script('menu', get_template_directory_uri() . '/index.js', array(), null, true);
+    wp_enqueue_script('menu', get_template_directory_uri() . '/index.js', array('jquery'), null, true);
 }
 
 add_action( 'wp_enqueue_scripts', 'startwordpress_scripts' );
@@ -45,6 +45,7 @@ function register_my_menus(){
 	);
 }
 add_action('init', 'register_my_menus');
+
 
 
 ?>
