@@ -11,7 +11,7 @@
 	
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-	<figure class="Principal-pic"><?php the_post_thumbnail('feed-thumb')?></figure>
+	<figure class="Principal-pic"><?php the_post_thumbnail()?></figure>
 	<div class="Principal-desc">
 		<a href="<?php echo get_permalink(); ?>"><h1 class="Principal-desc-title"><?php the_title(); ?></h1></a>
 		<div class="Author">

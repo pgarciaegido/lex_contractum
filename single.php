@@ -30,7 +30,7 @@
     				</h4>
 					</div>
 				</div>
-				<p class="Article-text"><?php echo get_the_content(); ?></p>
+				<p class="Article-text"><?php the_content(); ?></p>
 				<?php include TEMPLATEPATH . "/templates/social.php" ?>
 				</article>
 					</div>
