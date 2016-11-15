@@ -31,7 +31,6 @@
 					</div>
 				</div>
 				<p class="Article-text"><?php the_content(); ?></p>
-				<?php include TEMPLATEPATH . "/templates/social.php" ?>
 				</article>
 					</div>
 				</div>
