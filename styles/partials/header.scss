@@ -118,7 +118,7 @@
 .active-menu{
 	display:block;
 	transition: all .3s cubic-bezier(0.76, 0, 0.3, 1);
-	top: 5%;
+	top: 15vh;
 }
 .hidden{
 	display: none;
@@ -187,7 +187,6 @@
 	}
 	.active-menu{
 		display:block;
-		top: 2%;
 		padding-bottom: 0;
 	}
 }
