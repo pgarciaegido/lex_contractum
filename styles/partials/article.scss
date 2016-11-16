@@ -29,6 +29,16 @@
 		margin-bottom: $baseline;
 	}
 }
+.Article a, .Article a:visited{
+	color: $gray-txt;
+	-webkit-color: $gray-txt;
+	-moz-color:$gray-txt;
+}
+.Article a:hover{
+	color: $gray-txt;
+	-webkit-color: $black;
+	-moz-color: $black;
+}
 
 .status{
 	font-size: $h3;
