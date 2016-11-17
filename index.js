@@ -27,12 +27,14 @@ jQuery(document).ready(function(){
 			location.href= link;
 		}
 	}
-
+	
 	function searchMobile(){
-		$buscar.style.cssText = 'display:' + 'inline' + '; width:' + '80%;';
+		if(searchMobile == false && window.innerWidth < 500){
+			$buscar.style.cssText = 'display:' + 'inline' + '; width:' + '80%;';
+		}
 	}
 
-
+	// STICKY FOOTER
 	function stickyFooter(){
 		var element = document.getElementById('container');
 		var height = element.offsetHeight;
@@ -50,5 +52,6 @@ jQuery(document).ready(function(){
 	$close.addEventListener('touchstart',removeMenu);
 	$buscar.addEventListener('keydown', search);
 	$buscarMob.addEventListener('touchstart', searchMobile);
+	$body.addEventListener('touchstart', hideSearchBar);
 })
 	

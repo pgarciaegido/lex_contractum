@@ -22,6 +22,7 @@
 
 @media screen and (max-width : 500px){
 	.Buscar{
+		margin-top: $margin-mobile;
 		margin-right: $margin-mobile;
 		margin-bottom: $baseline-mobile;
 		&-input{
