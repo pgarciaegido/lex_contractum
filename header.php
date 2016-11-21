@@ -19,18 +19,20 @@
 				<a target="_blank" href="https://twitter.com/lex_contractus"><i class="fa fa-twitter"></i></a>
 				<a target="_blank" href="https://www.linkedin.com/company/15235328"><i class="fa fa-linkedin"></i></a>
 			</div>
+			<i class="fa fa-bars burguer-button" id="arrow"></i>
+			<a href="<?php bloginfo( 'wpurl' );?>"><img class="barra-superior-logo" id="logo-mobile" src="<?php bloginfo('template_url'); ?>/images/logo-blanco.svg" alt="Logo"></a>
 			<form class="Buscar">
-				<input type="text" id="buscar" class="Buscar-input">
+				<input type="text" class="Buscar-input">
 				<i class="fa fa-search" id="buscarIcon" aria-hidden="true"></i>
 			</form><!--BUSCAR-->
 		</div>
 	</div>
+	<!-- MOBILE INPUT -->
+	<input type="text" id="buscar" class="Buscar-input-mob">
+	<!-- /MOBILE INPUT -->
 	<div class="container" id="container">
 		<header class="Header">
 			<a href="<?php bloginfo( 'wpurl' );?>"><img class="Header-logo" id="logo" src="<?php bloginfo('template_url'); ?>/images/logo.svg" alt="Logo"></a>
-			<!-- arrow-mobile -->
-			<div id="arrow" class="Header-mobile"></div>
-			<!-- arrow-mobile -->
 		</header>
 				<!-- MOBILE MENU -->
 		<nav class="Mobile" id="Mobile">

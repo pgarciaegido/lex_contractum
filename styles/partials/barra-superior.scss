@@ -1,3 +1,7 @@
+i.burguer-bottom{
+	display: none;
+}
+
 .container-top{
 	max-width: 1000px;
 	margin: 0 auto;
@@ -13,13 +17,16 @@
 	margin-bottom: $baseline;
 	&-icons{
 		i{
-			font-size: 1.5em;
+			font-size: 1.6em;
 			margin-right: 30px;
 			color: white;
 		}
 		i:hover{
 			color: $gray-bg;
 		}
+	}
+	&-logo{
+		display: none;
 	}
 }
 
@@ -32,9 +39,22 @@
 }
 
 @media screen and (max-width: 500px){
+	i.burguer-button{
+		display: block;
+		color: white;
+		font-size: 2em;
+		margin-left: $margin-mobile;
+		margin-top: 15px;
+	}
 	.barra-superior{
 		&-icons{
-			margin-left: $margin-mobile;
+			display: none;
+		}
+		&-logo{
+			display: block;
+			width: 70%;
+			margin: 0 auto;
+			margin-top: 20px;
 		}
 	}
 }
