@@ -1,3 +1,10 @@
+.sticky{
+	position: fixed;
+	z-index: 2;
+	animation-name: stickyHeader;
+	animation-duration: .5s;
+}
+
 i.burguer-bottom{
 	display: none;
 }
@@ -64,4 +71,11 @@ i.burguer-bottom{
 			margin-top: 20px;
 		}
 	}
+}
+
+//ANIMATION
+
+@keyframes stickyHeader{
+	from{top: -100px;}
+	to{top: 0;}
 }

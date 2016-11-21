@@ -5,6 +5,8 @@ var $darkbg = document.getElementById('darkbg');
 var $close = document.getElementById('Mobile-close');
 var $buscar = document.getElementById('buscar');
 var $buscarMob = document.getElementById('buscarIcon');
+var $barraSuperior = document.getElementById('barra-superior');
+
 
 jQuery(document).ready(function(){
 	function showMenu(){
@@ -46,6 +48,19 @@ jQuery(document).ready(function(){
 		}
 	}
 
+	//STICKY HEADER
+
+	function stickyHeader(){
+		if(jQuery(this).scrollTop() > 100 && window.innerWidth < 500){
+			$barraSuperior.classList.add("sticky");
+			$barraSuperior.style.cssText = 'top' + '100px';
+		}
+		else{
+			$barraSuperior.classList.remove("sticky");
+		}
+	}
+
+	// jQuery(window).scroll(stickyHeader);
 	jQuery(window).bind('load', stickyFooter);
 	$arrow.addEventListener('touchstart', showMenu);
 	$darkbg.addEventListener('touchstart', removeMenu);

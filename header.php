@@ -13,7 +13,7 @@
 <div class="darkbg" id="darkbg"></div>
 <!-- HEADER -->
 	
-	<div class="barra-superior">
+	<div class="barra-superior" id="barra-superior">
 		<div class="container-top" id="container-top">
 			<div class="barra-superior-icons">
 				<a target="_blank" href="https://twitter.com/lex_contractus"><i class="fa fa-twitter"></i></a>
