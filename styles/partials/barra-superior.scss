@@ -1,0 +1,40 @@
+.container-top{
+	max-width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.barra-superior{
+	padding: 5px 0;
+	background-color: $gray-txt;
+	width: 100vw;
+	margin-bottom: $baseline;
+	&-icons{
+		i{
+			font-size: 1.5em;
+			margin-right: 30px;
+			color: white;
+		}
+		i:hover{
+			color: $gray-bg;
+		}
+	}
+}
+
+@media screen and (max-width: 800px){
+	.barra-superior{
+		&-icons{
+			margin-left: $margin-tablet;
+		}
+	}
+}
+
+@media screen and (max-width: 500px){
+	.barra-superior{
+		&-icons{
+			margin-left: $margin-mobile;
+		}
+	}
+}

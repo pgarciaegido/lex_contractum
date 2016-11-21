@@ -29,7 +29,7 @@ jQuery(document).ready(function(){
 	}
 	
 	function searchMobile(){
-		if(searchMobile == false && window.innerWidth < 500){
+		if(window.innerWidth < 500){
 			$buscar.style.cssText = 'display:' + 'inline' + '; width:' + '80%;';
 		}
 	}
@@ -52,6 +52,5 @@ jQuery(document).ready(function(){
 	$close.addEventListener('touchstart',removeMenu);
 	$buscar.addEventListener('keydown', search);
 	$buscarMob.addEventListener('touchstart', searchMobile);
-	$body.addEventListener('touchstart', hideSearchBar);
 })
 	

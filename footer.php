@@ -4,6 +4,10 @@
 	<footer class="Footer">
 	<div class="Footer-derecha">	
 		<img class="Footer-logo" src="<?php bloginfo('template_url'); ?>/images/logo-blanco.svg" alt="LexContractus">
+		<div class="Footer-icons">
+			<a target="_blank" href="https://twitter.com/lex_contractus"><i class="fa fa-twitter"></i></a>
+			<a target="_blank" href="https://www.linkedin.com/company/15235328"><i class="fa fa-linkedin"></i></a>
+		</div>
 		<p class="Footer-copy">Lex Contractus | 2016</p>
 	</div>
 		<nav class="Footer-menu">
@@ -17,7 +21,7 @@
 				<a href="http://lexcontractus.es/quienes-somos/"><li class="Footer-menu-item">¿QUIENES SOMOS?</li></a>
 				<a href="http://lexcontractus.es/contacta/"><li class="Footer-menu-item">CONTACTO</li></a>
 			</ul>
-			<a href="http://pegido.me"><div class="Footer-autor">
+			<a href="https://www.linkedin.com/in/pablo-garc%C3%ADa-egido-42115359?trk=nav_responsive_tab_profile_pic"><div class="Footer-autor">
 				<p class="Footer-autor-texto">DESIGN &</br> DEVELOPMENT</p>
 				<img src="<?php bloginfo('template_url'); ?>/images/pegido.svg" alt="Pablo Egido" class="Footer-autor-logo"></a>
 			</div>

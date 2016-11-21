@@ -26,10 +26,10 @@
 	margin-bottom: $baseline;
 	box-shadow: $box-shadow;
 	&-item{
-			align-items: center;
-			list-style-type: none;
-			width: 16%;
-			line-height: 1.2em;
+		align-items: center;
+		list-style-type: none;
+		width: 16%;
+		line-height: 1.2em;
 	}
 	a{
 		text-decoration: none;
@@ -40,7 +40,7 @@
 	}
 	a:hover{
 		color: $red;
-		transition: .3s;		
+		transition: .2s;		
 	}
 }
 

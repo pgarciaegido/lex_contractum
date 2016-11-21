@@ -12,11 +12,20 @@
 <?php include_once("analyticstracking.php") ?>
 <div class="darkbg" id="darkbg"></div>
 <!-- HEADER -->
+	
+	<div class="barra-superior">
+		<div class="container-top" id="container-top">
+			<div class="barra-superior-icons">
+				<a target="_blank" href="https://twitter.com/lex_contractus"><i class="fa fa-twitter"></i></a>
+				<a target="_blank" href="https://www.linkedin.com/company/15235328"><i class="fa fa-linkedin"></i></a>
+			</div>
+			<form class="Buscar">
+				<input type="text" id="buscar" class="Buscar-input">
+				<i class="fa fa-search" id="buscarIcon" aria-hidden="true"></i>
+			</form><!--BUSCAR-->
+		</div>
+	</div>
 	<div class="container" id="container">
-		<form class="Buscar">
-			<input type="text" id="buscar" class="Buscar-input">
-			<i class="fa fa-search" id="buscarIcon" aria-hidden="true"></i>
-		</form><!--BUSCAR-->
 		<header class="Header">
 			<a href="<?php bloginfo( 'wpurl' );?>"><img class="Header-logo" id="logo" src="<?php bloginfo('template_url'); ?>/images/logo.svg" alt="Logo"></a>
 			<!-- arrow-mobile -->

@@ -9,14 +9,25 @@
 	padding: $baseline 0;
 	display: flex;
 	color: $white;
-
 	&-derecha{
 		margin-right: 100px;
 		width: 30%;
 	}
 	&-logo{
 		width: 100%;
-		margin-bottom: 75px;
+		margin-bottom: 6px;
+	}
+	&-icons{
+		margin-left: 16px;
+		margin-bottom: 40px;
+		i{
+			font-size: 1.5em;
+			margin-right: 30px;
+			color: white;
+		}
+		i:hover{
+			color: $gray-bg;
+		}
 	}
 	a{
 		text-decoration: none;
@@ -38,8 +49,10 @@
 			text-decoration: none;
 			list-style-type: none;
 			font-size: 0.7em;
-			padding-bottom: 10px;
-			
+			padding-bottom: 10px;	
+		}
+		&-item:hover{
+			text-decoration: underline;
 		}
 	}
 	&-copy{
@@ -80,13 +93,20 @@
 @media screen and (max-width: 900px){
 	.Footer{
 		display:block;
+		&-icons{
+			max-width: 50%;
+			margin: 0 auto;
+			i{
+				margin-right: 20px;
+			}
+		}
 		&-derecha{
 			width: auto;
 			margin: 0;
 		}
 		&-logo{
 			display: block;
-			margin: 0 auto;
+			margin: 0 auto 20px auto;
 			width: 50%;
 		}
 		&-copy{
