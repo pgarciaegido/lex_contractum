@@ -4,7 +4,7 @@
 
 	<?php $query_args = array(
     "posts_per_page" => "1",
-    "orderby" => "modified",
+    "orderby" => "date",
     "order" => "DESC"
 	); ?>
 	<?php query_posts($query_args); ?>

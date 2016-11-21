@@ -13,9 +13,10 @@ i.burguer-bottom{
 .barra-superior{
 	padding: 5px 0;
 	background-color: $gray-txt;
-	width: 100vw;
+	width: 100%;
 	margin-bottom: $baseline;
 	&-icons{
+		margin-left: $margin-mobile;
 		i{
 			font-size: 1.6em;
 			margin-right: 30px;
@@ -37,7 +38,13 @@ i.burguer-bottom{
 		}
 	}
 }
-
+@media screen and (max-width: 550px){
+	.barra-superior{
+		&-icons{
+			margin-left: 10px;
+		}
+	}
+}
 @media screen and (max-width: 500px){
 	i.burguer-button{
 		display: block;

@@ -1,5 +1,6 @@
 .Buscar{
 	text-align: right;
+	margin-right: $margin-mobile;
 	&-input{
 		width: 320px;
 		height: 20px;
@@ -29,7 +30,6 @@
 @media screen and (max-width : 500px){
 	.Buscar{
 		margin-top: $margin-mobile;
-		margin-right: $margin-mobile;
 		margin-bottom: $baseline-mobile;
 		display: block;
 		&-input{
