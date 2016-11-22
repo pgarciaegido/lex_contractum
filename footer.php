@@ -30,6 +30,7 @@
 	</footer>
 	</div>
 </div>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <script src="https://use.fontawesome.com/574a157edd.js"></script>
 <?php wp_footer(); ?>
 </body>

@@ -9,6 +9,7 @@ var $barraSuperior = document.getElementById('barra-superior');
 
 
 jQuery(document).ready(function(){
+
 	function showMenu(){
 		$menu.classList.add('active-menu');
 		$body.classList.add('overflow');
@@ -59,6 +60,14 @@ jQuery(document).ready(function(){
 			$barraSuperior.classList.remove("sticky");
 		}
 	}
+
+	//MASONRY ** ESPECIAL LAYOUT LIBRARY
+
+	jQuery('.Feed').masonry({
+	  // options
+	  itemSelector: '.Feed-wrapper',
+	  columnWidth: '.Feed-wrapper'
+	});
 
 	// jQuery(window).scroll(stickyHeader);
 	jQuery(window).bind('load', stickyFooter);
