@@ -34,6 +34,7 @@
 	</footer>
 	</div>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.1.8/imagesloaded.pkgd.min.js"></script>
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <script src="https://use.fontawesome.com/574a157edd.js"></script>
 <?php wp_footer(); ?>

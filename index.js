@@ -61,12 +61,14 @@ jQuery(document).ready(function(){
 		}
 	}
 
-	//MASONRY ** ESPECIAL LAYOUT LIBRARY
-
-	jQuery('.Feed').masonry({
-	  // options
-	  itemSelector: '.Feed-wrapper',
-	  columnWidth: '.Feed-wrapper'
+	//MASONRY ** ESPECIAL LAYOUT LIBRARY. 
+	//IMAGESLOADED IS A LIBRARY THAT MAKES MASONRY WORK AFTER ALL IMGS ARE LOADED
+	jQuery('.Feed').imagesLoaded(function () {
+		jQuery('.Feed').masonry({
+		  // options
+		  itemSelector: '.Feed-wrapper',
+		  columnWidth: '.Feed-wrapper'
+		});
 	});
 
 	// jQuery(window).scroll(stickyHeader);
