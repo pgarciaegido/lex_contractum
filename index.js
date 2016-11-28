@@ -1,3 +1,6 @@
+@import "node_modules/imagesloaded/imagesloaded.pkgd.min.js";
+@import "node_modules/masonry-layout/masonry.js";
+
 var $arrow = document.getElementById('arrow');
 var $menu = document.getElementById('Mobile');
 var $body = document.getElementById('body');

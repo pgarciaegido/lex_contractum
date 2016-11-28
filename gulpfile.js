@@ -5,6 +5,7 @@ var sass = require ('gulp-sass');
 var imagemin = require('gulp-imagemin');
 var autoprefixer = require('gulp-autoprefixer');
 var rename = require('gulp-rename');
+var webpack = require('webpack-stream');
 
 function errorLog(error){
 	console.error.bind(error);
@@ -15,6 +16,7 @@ function errorLog(error){
 // Uglifies
 gulp.task('scripts', function(){
 	gulp.src('./index.js')
+			.pipe(webpack())
 			.pipe(uglify())
 			.on('error', errorLog)
 			.pipe(gulp.dest('build/js'));
