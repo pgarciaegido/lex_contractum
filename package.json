@@ -1,0 +1,29 @@
+{
+  "name": "lexcontractus",
+  "version": "1.0.0",
+  "description": "Wordpress theme for lexcontractus.es",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pgarciaegido/lex_contractum.git"
+  },
+  "author": "Pablo Egido",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pgarciaegido/lex_contractum/issues"
+  },
+  "homepage": "https://github.com/pgarciaegido/lex_contractum#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0"
+  }
+}
