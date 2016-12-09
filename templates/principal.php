@@ -15,7 +15,6 @@
 	<div class="Principal-desc">
 		<a href="<?php echo get_permalink(); ?>"><h1 class="Principal-desc-title"><?php the_title(); ?></h1></a>
 		<div class="Author">
-			<img class="Author-pic" id="aut-pic" src="https://randomuser.me/api/portraits/men/85.jpg" alt="">
 			<h4 class="Author-name"><?php the_author(); ?> <span class="Author-date"><?php echo get_the_date(); ?></span></h4>
 		</div>
 	</div>
