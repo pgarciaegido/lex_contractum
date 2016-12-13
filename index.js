@@ -1,6 +1,3 @@
-@import "node_modules/imagesloaded/imagesloaded.pkgd.min.js";
-@import "node_modules/masonry-layout/masonry.js";
-
 var $arrow = document.getElementById('arrow');
 var $menu = document.getElementById('Mobile');
 var $body = document.getElementById('body');
@@ -9,7 +6,6 @@ var $close = document.getElementById('Mobile-close');
 var $buscar = document.getElementById('buscar');
 var $buscarMob = document.getElementById('buscarIcon');
 var $barraSuperior = document.getElementById('barra-superior');
-
 
 jQuery(document).ready(function(){
 
@@ -73,6 +69,37 @@ jQuery(document).ready(function(){
 		  columnWidth: '.Feed-wrapper'
 		});
 	});
+
+	//NavBar color item when selected.
+
+	var routes = ["http://lexcontractus.es/",
+								"http://lexcontractus.es/category/mercantil/",
+								"http://lexcontractus.es/category/fiscal-internacional/",
+								"http://lexcontractus.es/category/propiedad-industrial-e-intelectual/",
+								"http://lexcontractus.es/quienes-somos/",
+								"http://lexcontractus.es/contacta/"];
+
+	var routesArt = [null,
+									 "http://lexcontractus.es/mercantil/",
+									 "http://lexcontractus.es/fiscal-internacional/",
+									 "http://lexcontractus.es/propiedad-industrial-e-intelectual"]
+
+	function navColor () {
+		for(var i = 0; i < routes.length; i++){
+			if (document.URL == routes[i])
+				jQuery('#menu-header').find('a').eq(i).css('color','#690000');	
+		}
+	}
+
+	function navColorArt () {
+		for(var i = 0; i < routesArt.length; i++){
+			if (document.URL.indexOf(routesArt[i]) != -1)
+				jQuery('#menu-header').find('a').eq(i).css('color','#690000');
+		}
+	}
+
+	navColor();
+	navColorArt();
 
 	// jQuery(window).scroll(stickyHeader);
 	jQuery(window).bind('load', stickyFooter);

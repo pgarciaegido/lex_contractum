@@ -16,7 +16,7 @@ function errorLog(error){
 // Uglifies
 gulp.task('scripts', function(){
 	gulp.src('./index.js')
-			.pipe(webpack())
+			// .pipe(webpack())
 			.pipe(uglify())
 			.on('error', errorLog)
 			.pipe(gulp.dest('build/js'));
