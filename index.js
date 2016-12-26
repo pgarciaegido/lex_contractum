@@ -36,6 +36,27 @@ jQuery(document).ready(function(){
 		}
 	}
 
+	function readingBar () {
+		var B = document.body,
+		    H = document.documentElement,
+		    height
+
+		if (typeof document.height !== 'undefined') {
+		    height = document.height // For webkit browsers
+		} else {
+		    height = Math.max( B.scrollHeight, B.offsetHeight,H.clientHeight, H.scrollHeight, H.offsetHeight );
+		}
+
+		function scrollBar () {
+			var windowHeight = window.innerHeight;
+			height = height - windowHeight;
+		  var percentage = (window.pageYOffset / height * 100);
+		  document.getElementById('reading-bar').style.width = percentage + '%';
+		}
+
+		scrollBar()
+	}
+
 	// STICKY FOOTER
 	function stickyFooter(){
 		var element = document.getElementById('container');
@@ -108,5 +129,6 @@ jQuery(document).ready(function(){
 	$close.addEventListener('touchstart',removeMenu);
 	$buscar.addEventListener('keydown', search);
 	$buscarMob.addEventListener('touchstart', searchMobile);
+	document.addEventListener('scroll', readingBar);
 })
 	
