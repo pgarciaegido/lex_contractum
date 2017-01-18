@@ -2,7 +2,7 @@
 <div id="footer-bg">
 	<div class="container">
 	<footer class="Footer">
-	<div class="Footer-derecha">	
+	<div class="Footer-derecha">
 		<img class="Footer-logo" src="<?php bloginfo('template_url'); ?>/images/logo-blanco.svg" alt="LexContractus">
 		<div class="Footer-icons">
 			<a target="_blank" href="https://twitter.com/lex_contractus"><i class="fa fa-twitter"></i></a>
@@ -34,9 +34,7 @@
 	</footer>
 	</div>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.1.8/imagesloaded.pkgd.min.js"></script>
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <script src="https://use.fontawesome.com/574a157edd.js"></script>
 <?php wp_footer(); ?>
 </body>
-</html> 
+</html>

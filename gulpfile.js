@@ -1,11 +1,10 @@
-var gulp = require('gulp');
-var uglify = require('gulp-uglify');
-var sass = require ('gulp-sass');
-// var livereload = require('gulp-livereload');
-var imagemin = require('gulp-imagemin');
+var gulp         = require('gulp');
+var uglify       = require('gulp-uglify');
+var sass         = require ('gulp-sass');
+var imagemin     = require('gulp-imagemin');
 var autoprefixer = require('gulp-autoprefixer');
-var rename = require('gulp-rename');
-var webpack = require('webpack-stream');
+var rename       = require('gulp-rename');
+var webpack      = require('webpack-stream');
 
 function errorLog(error){
 	console.error.bind(error);
@@ -16,7 +15,9 @@ function errorLog(error){
 // Uglifies
 gulp.task('scripts', function(){
 	gulp.src('./index.js')
-			// .pipe(webpack())
+			.pipe(webpack({
+				output: {filename: 'index.js'}
+			}))
 			.pipe(uglify())
 			.on('error', errorLog)
 			.pipe(gulp.dest('build/js'));

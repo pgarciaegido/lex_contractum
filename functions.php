@@ -4,7 +4,7 @@
 
 function startwordpress_scripts(){
     wp_enqueue_style('styles', get_template_directory_uri() . '/style.css');
-    wp_enqueue_script('menu', get_template_directory_uri() . '/index.js', array('jquery'), null, true);
+    wp_enqueue_script('menu', get_template_directory_uri() . '/index.js', array(), null, true);
 }
 
 add_action( 'wp_enqueue_scripts', 'startwordpress_scripts' );
@@ -37,7 +37,7 @@ add_action( 'after_setup_theme', 'wpdocs_theme_setup' );
 
 function register_my_menus(){
 	// register_nav_menu('header-nav', __('Header Navigation'));
-	register_nav_menus( 
+	register_nav_menus(
 		array(
 			'menu-header' => __('Menú del encabezado'),
 			'menu-footer' => __('Menú del footer')
@@ -49,4 +49,3 @@ add_action('init', 'register_my_menus');
 
 
 ?>
-
