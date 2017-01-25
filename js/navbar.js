@@ -19,7 +19,7 @@ var routesArt = [null,
 
 // Gets where we are located and colors the menu
 function navColor () {
-  for(var i = 0; i < routes.length; i++){
+  for(var i = 0, len = routes.length; i < len; i++){
     if (document.URL == routes[i])
       $('#menu-header').find('a').eq(i).css('color','#690000');
   }
@@ -27,7 +27,7 @@ function navColor () {
 
 // Gets where we are (within the article) and colores the menu
 function navColorArt () {
-  for(var i = 0; i < routesArt.length; i++){
+  for(var i = 0, len = routesArt.length; i < len; i++){
     if (document.URL.indexOf(routesArt[i]) != -1)
       $('#menu-header').find('a').eq(i).css('color','#690000');
   }
