@@ -28,6 +28,9 @@
 		line-height: $lh-p;
 		margin-bottom: $baseline;
 	}
+	p{
+		text-indent: 30px;
+	}
 }
 .Article a, .Article a:visited{
 	color: $gray-txt;
