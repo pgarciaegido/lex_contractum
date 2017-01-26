@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title><?php bloginfo('description'); ?></title>
+	<title>Lex Contractus</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="google-site-verification" content="zyv_UUMim3J97jY6uvD6Y0FVl5vfgnojTko7eF9EZRE" />
 	<?php wp_head(); ?>
@@ -12,7 +12,7 @@
 <?php include_once("analyticstracking.php") ?>
 <div class="darkbg" id="darkbg"></div>
 <!-- HEADER -->
-	
+
 	<div class="barra-superior" id="barra-superior">
 		<div class="container-top" id="container-top">
 			<div class="barra-superior-icons">
