@@ -24,7 +24,8 @@
 					</div>
 					<div class="Etiqueta">
 						<i class="fa fa-bookmark" aria-hidden="true"></i>
-						<h4 class="Etiqueta-name"><a href="#"><?php $categories = get_the_category();
+						<h4 class="Etiqueta-name">
+							<a href="#"><?php $categories = get_the_category();
 							if ( ! empty( $categories ) ) {
     					echo esc_html( $categories[0]->name );
     					}?></a>

@@ -14,13 +14,13 @@ function errorLog(error){
 // Scripts Task
 // Uglifies
 gulp.task('scripts', function(){
-	gulp.src('./index.js')
+	gulp.src('./js/index.js')
 			.pipe(webpack({
 				output: {filename: 'index.js'}
 			}))
 			.pipe(uglify())
 			.on('error', errorLog)
-			.pipe(gulp.dest('build/js'));
+			.pipe(gulp.dest('./'));
 });
 
 //Styles Task

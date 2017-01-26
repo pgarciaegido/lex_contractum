@@ -2,7 +2,8 @@ var $ = require('../../../../wp-includes/js/jquery/jquery.js')
 
 module.exports = {
   navColor   : navColor,
-  navColorArt: navColorArt
+  navColorArt: navColorArt,
+  linkInTag: linkInTag
 }
 
 var routes = ["http://lexcontractus.es/",
@@ -30,5 +31,15 @@ function navColorArt () {
   for(var i = 0, len = routesArt.length; i < len; i++){
     if (document.URL.indexOf(routesArt[i]) != -1)
       $('#menu-header').find('a').eq(i).css('color','#690000');
+  }
+}
+
+function linkInTag () {
+  if(document.URL.split('/').length > 4) {
+    var $tag = $('.Etiqueta-name').find('a');
+    if ($tag.html() == 'MERCANTIL')
+      $tag.attr('href', routes[1]);
+    else if ($tag.html() == 'FISCAL INTERNACIONAL')
+      $tag.attr('href', routes[2]);
   }
 }
