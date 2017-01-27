@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<h3 class="status">MERCANTIL INTERNACIONAL</h3>
+<h3 class="status">MERCANTIL </h3>
 <section class="Feed">
 	<?php rewind_posts(); ?>
 

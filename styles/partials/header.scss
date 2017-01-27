@@ -34,7 +34,11 @@
 	}
 	&-title{
 		margin: 0;
-		color: $red;
+		a{
+			color: $red;
+			text-decoration: none;
+		}
+
 	}
 	&-list{
 		margin: 0;
@@ -168,7 +172,7 @@
 			display: block;
 		}
 	}
-	
+
 	.menu{
 		display: none;
 	}

@@ -29,7 +29,7 @@
 	</div>
 	<nav class="menu">
 		<div class="menu-container">
-			<h1 class="menu-title">Lex Contractus</h1>
+			<h1 class="menu-title"><a href="http://lexcontractus.es">Lex Contractus</a></h1>
 		  <ul class="menu-list">
 		    <li class="menu-list-item"><a href="http://lexcontractus.es">HOME</a></li>
 		    <li class="menu-list-item"><a href="http://lexcontractus.es/category/mercantil/">MERCANTIL</a></li>
