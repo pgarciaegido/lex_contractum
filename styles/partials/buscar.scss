@@ -21,13 +21,7 @@
     color: white;
 }
 
-@media screen and (max-width : 800px){
-	.Buscar{
-		margin-right: $margin-tablet;
-	}
-}
-
-@media screen and (max-width : 500px){
+@media screen and (max-width : 890px){
 	.Buscar{
 		margin-top: $margin-mobile;
 		margin-bottom: $baseline-mobile;
@@ -38,5 +32,11 @@
 	}
 	.fa-search:before {
     font-size: 1.8em;
+	}
+}
+
+@media screen and (max-width : 800px){
+	.Buscar{
+		margin-right: $margin-tablet;
 	}
 }

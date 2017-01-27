@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-<?php include TEMPLATEPATH . "/templates/nav.php" ?>
 <h3 class="status">FISCAL INTERNACIONAL</h3>
 <section class="Feed">
 	<?php rewind_posts(); ?>

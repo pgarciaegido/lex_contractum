@@ -51,7 +51,7 @@ gulp.task('watch', function(){
 
 	// var server = livereload();
 
-	gulp.watch('./index.js',  ['scripts']);
+	// gulp.watch('./index.js',  ['scripts']);
 	gulp.watch('styles/index.scss', ['styles']);
 });
 

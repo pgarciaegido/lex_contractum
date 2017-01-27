@@ -21,26 +21,48 @@
 }
 
 .menu{
+	padding: 15px 0;
 	background-color: $white;
-	height: 70px;
 	margin-bottom: $baseline;
 	box-shadow: $box-shadow;
-	&-item{
-		align-items: center;
-		list-style-type: none;
-		width: 16%;
-		line-height: 1.2em;
+
+	&-container{
+		max-width: 1000px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
 	}
-	a{
-		text-decoration: none;
-		color: $gray-txt;
-		font-family: 'Asap', sans-serif;
-		font-size: 1em;
-		font-weight: 700;
-	}
-	a:hover{
+	&-title{
+		margin: 0;
 		color: $red;
-		transition: .2s;		
+	}
+	&-list{
+		margin: 0;
+		padding: 0;
+		padding-top: 7px;
+		display: inline;
+		&-item{
+			display: inline;
+			padding-left: 15px;
+			align-items: center;
+			list-style-type: none;
+			max-width: 15%;
+			line-height: 1em;
+			text-align: center;
+		}
+		a{
+			max-width: 150px;
+			text-decoration: none;
+			color: $gray-txt;
+			font-family: 'Asap', sans-serif;
+			font-size: 0.8em;
+			font-weight: 700;
+			word-wrap: break-word;
+		}
+		a:hover{
+			color: $red;
+			transition: .2s;
+		}
 	}
 }
 
@@ -133,46 +155,24 @@
   transform: rotate(180deg);
 }
 
-@media screen and (max-width : 800px){
-	.Header{
-		&-logo{
-			width: 60%;
-		}
-	}
-
-	.menu{
-		a{
-			font-size: 0.9em;
-			line-height: 0.9em;
-		}
+@media screen and (max-width : 1000px){
+	.menu-container{
+		padding: 0 15px;
 	}
 }
 
-@media screen and (max-width : 650px){
-	.menu{
-		a{
-			font-size: 0.7em;
-			line-height: 0.7em;
-		}
-	}
-}
 
-@media screen and (max-width : 500px){
+@media screen and (max-width : 890px){
 	.Header{
-		// el icono es algo más alto
-		&-logo{
-			margin-bottom: 0;
-			display: none;
-		}
 		&-mobile{
 			display: block;
 		}
 	}
-
+	
 	.menu{
 		display: none;
 	}
-	
+
 	.fa-caret-down:before {
     display: block;
 	}

@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-<?php include TEMPLATEPATH . "/templates/nav.php" ?>
-
 <section class="Feed">
 	<?php rewind_posts(); ?>
 

@@ -1,12 +1,11 @@
 <?php get_header(); ?>
-<?php include TEMPLATEPATH . "/templates/nav.php" ?>
 <?php get_header(); ?>
- 
+
 <div class="Search">
     <h3 class="Search-status"><?php printf(__('RESULTADOS DE LA BÚSQUEDA PARA: %s', 'mytheme' ), '<strong>' . get_search_query() . '</strong>'); ?></h3>
     <?php if (have_posts()): ?>
           <?php while ( have_posts() ) : the_post(); ?>
-              <article class="Search-result">  
+              <article class="Search-result">
                   <a class="Search-result-a" href="<?php echo get_permalink(); ?>">
                       <?php the_post_thumbnail('thumbnail', array('class' => 'Search-result-img')); ?>
                       <div class="Search-result-details">
@@ -22,9 +21,9 @@
     <?php else: ?>
         <h3 class="Search-not">No encontrado. </h3>
         <p class="Search-not-text">Lo sentimos, no hemos encontrado nada bajos esos criterios.</p>
-    <?php endif; ?>  
+    <?php endif; ?>
 </div>
- 
+
 <?php get_footer(); ?>
 
 <?php get_footer(); ?>

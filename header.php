@@ -16,8 +16,8 @@
 	<div class="barra-superior" id="barra-superior">
 		<div class="container-top" id="container-top">
 			<div class="barra-superior-icons">
-				<a target="_blank" href="https://twitter.com/lex_contractus"><i class="fa fa-twitter"></i></a>
-				<a target="_blank" href="https://www.linkedin.com/company/15235328"><i class="fa fa-linkedin"></i></a>
+				<a target="_blank" href="https://twitter.com/lex_contractus"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				<a target="_blank" href="https://www.linkedin.com/company/15235328"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 			</div>
 			<i class="fa fa-bars burguer-button" id="arrow"></i>
 			<a href="<?php bloginfo( 'wpurl' );?>"><img class="barra-superior-logo" id="logo-mobile" src="<?php bloginfo('template_url'); ?>/images/logo-blanco.svg" alt="Logo"></a>
@@ -27,13 +27,23 @@
 			</form><!--BUSCAR-->
 		</div>
 	</div>
+	<nav class="menu">
+		<div class="menu-container">
+			<h1 class="menu-title">Lex Contractus</h1>
+		  <ul class="menu-list">
+		    <li class="menu-list-item"><a href="http://lexcontractus.es">HOME</a></li>
+		    <li class="menu-list-item"><a href="http://lexcontractus.es/category/mercantil/">MERCANTIL</a></li>
+		    <li class="menu-list-item"><a href="http://lexcontractus.es/category/fiscal-internacional/">FISCAL INTERNACIONAL</a></li>
+		    <li class="menu-list-item"><a href="http://lexcontractus.es/category/propiedad-industrial-e-intelectual/">PROPIEDAD INDUSTRIAL</a></li>
+		    <li class="menu-list-item"><a href="http://lexcontractus.es/quienes-somos/">QUIENES SOMOS</a></li>
+		    <li class="menu-list-item"><a href="http://lexcontractus.es/contacta/">CONTACTA</a></li>
+		  </ul>
+		</div>
+	</nav>
 	<!-- MOBILE INPUT -->
 	<input type="text" id="buscar" class="Buscar-input-mob">
 	<!-- /MOBILE INPUT -->
 	<div class="container" id="container">
-		<header class="Header">
-			<a href="<?php bloginfo( 'wpurl' );?>"><img class="Header-logo" id="logo" src="<?php bloginfo('template_url'); ?>/images/logo.svg" alt="Logo"></a>
-		</header>
 				<!-- MOBILE MENU -->
 		<nav class="Mobile" id="Mobile">
 			<div class="Mobile-header">

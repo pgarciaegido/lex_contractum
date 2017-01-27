@@ -5,8 +5,8 @@
 	<div class="Footer-derecha">
 		<img class="Footer-logo" src="<?php bloginfo('template_url'); ?>/images/logo-blanco.svg" alt="LexContractus">
 		<div class="Footer-icons">
-			<a target="_blank" href="https://twitter.com/lex_contractus"><i class="fa fa-twitter"></i></a>
-			<a target="_blank" href="https://www.linkedin.com/company/15235328"><i class="fa fa-linkedin"></i></a>
+			<a target="_blank" href="https://twitter.com/lex_contractus"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
+			<a target="_blank" href="https://www.linkedin.com/company/15235328"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 		</div>
 		<p class="Footer-copy">Lex Contractus | 2016</p>
 	</div>

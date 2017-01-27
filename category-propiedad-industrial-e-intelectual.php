@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-<?php include TEMPLATEPATH . "/templates/nav.php" ?>
 <h3 class="status">PROPIEDAD INDUSTRIAL E INTELECTUAL</h3>
 <section class="Feed">
 	<?php rewind_posts(); ?>

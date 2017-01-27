@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<?php include TEMPLATEPATH . "/templates/nav.php" ?>
+
 	<div class="wrapper">
 		<div id="reading-bar"></div>
 		<?php rewind_posts(); ?>

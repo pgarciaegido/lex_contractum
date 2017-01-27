@@ -21,7 +21,7 @@ i.burguer-bottom{
 	padding: 5px 0;
 	background-color: $gray-txt;
 	width: 100%;
-	margin-bottom: $baseline;
+	margin-bottom: 0;
 	&-icons{
 		margin-left: $margin-mobile;
 		i{
@@ -38,21 +38,7 @@ i.burguer-bottom{
 	}
 }
 
-@media screen and (max-width: 800px){
-	.barra-superior{
-		&-icons{
-			margin-left: $margin-tablet;
-		}
-	}
-}
-@media screen and (max-width: 550px){
-	.barra-superior{
-		&-icons{
-			margin-left: 10px;
-		}
-	}
-}
-@media screen and (max-width: 500px){
+@media screen and (max-width: 890px){
 	i.burguer-button{
 		display: block;
 		color: white;
@@ -61,6 +47,7 @@ i.burguer-bottom{
 		margin-top: 15px;
 	}
 	.barra-superior{
+		margin-bottom: $baseline;
 		&-icons{
 			display: none;
 		}
@@ -69,6 +56,14 @@ i.burguer-bottom{
 			width: 70%;
 			margin: 0 auto;
 			margin-top: 20px;
+		}
+	}
+}
+
+@media screen and (max-width: 800px){
+	.barra-superior{
+		&-icons{
+			margin-left: $margin-tablet;
 		}
 	}
 }

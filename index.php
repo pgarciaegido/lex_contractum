@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-<?php include TEMPLATEPATH . "/templates/nav.php" ?>
 <?php include TEMPLATEPATH . "/templates/principal.php" ?>
 
 <section class="Feed">
