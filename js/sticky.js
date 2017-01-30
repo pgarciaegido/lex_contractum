@@ -9,11 +9,8 @@ module.exports = {
 function stickyFooter(){
   var element = document.getElementById('container');
   var height = element.offsetHeight;
-  if (height < screen.height -300){
+  if (height < screen.height -400){
     document.getElementById("footer-bg").classList.add('stikybottom');
-  }
-  else{
-    document.getElementById("footer-bg").style.cssText = 'position:' + 'relative;';
   }
 }
 

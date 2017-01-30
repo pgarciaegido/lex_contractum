@@ -3,6 +3,7 @@
 #footer-bg{
 	background-color: $gray-txt;
 	font-family: 'Asap';
+	position: relative;
 }
 
 .Footer{
@@ -49,7 +50,7 @@
 			text-decoration: none;
 			list-style-type: none;
 			font-size: 0.7em;
-			padding-bottom: 10px;	
+			padding-bottom: 10px;
 		}
 		&-item:hover{
 			text-decoration: underline;
@@ -84,7 +85,7 @@
 }
 
 .stikybottom {
-    position: fixed;
+    position: fixed !important;
     bottom:0;
     left: 0;
     right:0;
