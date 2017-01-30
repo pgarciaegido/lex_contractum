@@ -30,7 +30,7 @@
 	<nav class="menu">
 		<div class="menu-container">
 			<h1 class="menu-title"><a href="http://lexcontractus.es">Lex Contractus</a></h1>
-		  <ul class="menu-list">
+		  <ul class="menu-list" id="color-menu">
 		    <li class="menu-list-item"><a href="http://lexcontractus.es">HOME</a></li>
 		    <li class="menu-list-item"><a href="http://lexcontractus.es/category/mercantil/">MERCANTIL</a></li>
 		    <li class="menu-list-item"><a href="http://lexcontractus.es/category/fiscal-internacional/">FISCAL INTERNACIONAL</a></li>

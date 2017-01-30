@@ -22,7 +22,7 @@ var routesArt = [null,
 function navColor () {
   for(var i = 0, len = routes.length; i < len; i++){
     if (document.URL == routes[i])
-      $('#menu-header').find('a').eq(i).css('color','#690000');
+      $('#color-menu').find('a').eq(i).css('color','#690000');
   }
 }
 
@@ -30,10 +30,11 @@ function navColor () {
 function navColorArt () {
   for(var i = 0, len = routesArt.length; i < len; i++){
     if (document.URL.indexOf(routesArt[i]) != -1)
-      $('#menu-header').find('a').eq(i).css('color','#690000');
+      $('#color-menu').find('a').eq(i).css('color','#690000');
   }
 }
 
+// Implements link into article section tags
 function linkInTag () {
   if(document.URL.split('/').length > 4) {
     var $tag = $('.Etiqueta-name').find('a');
