@@ -23,15 +23,15 @@
 
 @media screen and (max-width : 890px){
 	.Buscar{
-		margin-top: $margin-mobile;
+		margin-top: 8px;
 		margin-bottom: $baseline-mobile;
 		display: block;
 		&-input{
 			display: none;
 		}
-	}
-	.fa-search:before {
-    font-size: 1.8em;
+		#buscar-icon{
+			font-size: 1.6em;
+		}
 	}
 }
 

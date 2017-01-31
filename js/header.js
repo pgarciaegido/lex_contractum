@@ -36,7 +36,7 @@ function search(e){
 // Opens the search bar on mobile
 function searchMobile(){
   if(window.innerWidth < 500){
-    v.$buscar.style.cssText = 'display:' + 'inline' + '; width:' + '80%;';
+    v.$buscar.style.cssText = 'display:block; position: absolute; width:50%; top:55px; right:20px;';
   }
 }
 

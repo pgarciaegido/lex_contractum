@@ -161,7 +161,7 @@
 	// Opens the search bar on mobile
 	function searchMobile(){
 	  if(window.innerWidth < 500){
-	    v.$buscar.style.cssText = 'display:' + 'inline' + '; width:' + '80%;';
+	    v.$buscar.style.cssText = 'display:block; position: absolute; width:50%; top:55px; right:20px;';
 	  }
 	}
 
@@ -250,8 +250,7 @@
 	var v = __webpack_require__(3)
 
 	module.exports = {
-	  footer: stickyFooter,
-	  header: stickyHeader
+	  footer: stickyFooter
 	}
 
 	// If the screen content height is shorter than the total viewport height, sticky footer
@@ -260,17 +259,6 @@
 	  var height = element.offsetHeight;
 	  if (height < screen.height -400){
 	    document.getElementById("footer-bg").classList.add('stikybottom');
-	  }
-	}
-
-	//STICKY HEADER
-	function stickyHeader(){
-	  if(jQuery(this).scrollTop() > 100 && window.innerWidth < 500){
-	    v.$barraSuperior.classList.add("sticky");
-	    v.$barraSuperior.style.cssText = 'top' + '100px';
-	  }
-	  else{
-	    v.$barraSuperior.classList.remove("sticky");
 	  }
 	}
 
