@@ -22,7 +22,14 @@ body{
 	}
 }
 
-
+@media screen and (max-width: 890px){
+	body{
+		.container{
+			// Leaves space for sticky header
+			padding-top: 102px;
+		}
+	}
+}
 
 /*
 *FEED

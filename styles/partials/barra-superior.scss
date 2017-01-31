@@ -38,6 +38,16 @@ i.burguer-bottom{
 	}
 }
 
+#reading-bar{
+	height: 5px;
+	background: $red;
+	width: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	position: fixed;
+}
+
 @media screen and (max-width: 890px){
 	i.burguer-button{
 		display: block;
@@ -47,7 +57,11 @@ i.burguer-bottom{
 		margin-top: 15px;
 	}
 	.barra-superior{
-		margin-bottom: $baseline;
+		//Sticky header
+		position: fixed;
+		top: 0;
+		z-index: 9999999;
+
 		&-icons{
 			display: none;
 		}
@@ -57,6 +71,10 @@ i.burguer-bottom{
 			margin: 0 auto;
 			margin-top: 20px;
 		}
+	}
+
+	#reading-bar{
+		top: 72px !important;
 	}
 }
 
