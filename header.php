@@ -21,10 +21,12 @@
 			</div>
 			<i class="fa fa-bars burguer-button" id="arrow"></i>
 			<a href="<?php bloginfo( 'wpurl' );?>"><img class="barra-superior-logo" id="logo-mobile" src="<?php bloginfo('template_url'); ?>/images/logo-blanco.svg" alt="Logo"></a>
+			<!--BUSCAR-->
 			<form class="Buscar">
-				<input type="text" class="Buscar-input">
+				<input type="text" class="Buscar-input" id="buscar">
 				<i class="fa fa-search" id="buscarIcon" aria-hidden="true"></i>
-			</form><!--BUSCAR-->
+			</form>
+			<!--BUSCAR-->
 		</div>
 	</div>
 	<nav class="menu">

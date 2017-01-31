@@ -27,7 +27,7 @@ function removeMenu(){
 function search(e){
   if(e.keyCode === 13){
     event.preventDefault(e);
-    var result = $buscar.value;
+    var result = v.$buscar.value;
     var link = 'http://lexcontractus.es/?s='+ result;
     location.href= link;
   }
