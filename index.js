@@ -159,9 +159,14 @@
 	}
 
 	// Opens the search bar on mobile
+	var opened = false;
 	function searchMobile(){
-	  if(window.innerWidth < 500){
+	  if(window.innerWidth < 891 && opened === false){
 	    v.$buscar.style.cssText = 'display:block; position: absolute; width:50%; top:55px; right:20px;';
+	    opened = true;
+	  } else if(window.innerWidth < 891 && opened === true){
+	    v.$buscar.style.cssText = 'display:none;';
+	    opened = false;
 	  }
 	}
 
