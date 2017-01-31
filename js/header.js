@@ -10,14 +10,15 @@ module.exports = {
 
 // Opens the menu
 function showMenu(){
-  v.$menu.classList.add('active-menu');
+  var top = window.pageYOffset + 100
+  v.$menu.style.cssText = 'display:block; transition: all .3s cubic-bezier(0.76, 0, 0.3, 1); top:' + top + 'px;';
   v.$body.classList.add('overflow');
   v.$darkbg.classList.add('active');
 }
 
 // closes the menu
 function removeMenu(){
-  v.$menu.classList.remove('active-menu');
+  v.$menu.style.cssText = 'top: -9999px;';
   v.$body.classList.remove('overflow');
   v.$darkbg.classList.remove('active');
 }
