@@ -4,6 +4,11 @@
 	background-color: $gray-txt;
 	font-family: 'Asap';
 	position: relative;
+
+	.container-footer{
+		max-width: 1000px;
+		margin: 0 auto;
+	}
 }
 
 .Footer{

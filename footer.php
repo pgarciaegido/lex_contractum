@@ -1,6 +1,6 @@
 </div> <!--container-->
 <div id="footer-bg">
-	<div class="container">
+	<div class="container-footer">
 	<footer class="Footer">
 	<div class="Footer-derecha">
 		<img class="Footer-logo" src="<?php bloginfo('template_url'); ?>/images/logo-blanco.svg" alt="LexContractus">
