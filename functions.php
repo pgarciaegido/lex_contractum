@@ -4,9 +4,9 @@
 
 function startwordpress_scripts(){
     wp_enqueue_style('styles', get_template_directory_uri() . '/style.css');
+    wp_enqueue_script('jquery');
     wp_enqueue_script('menu', get_template_directory_uri() . '/index.js', array(), null, true);
 }
-
 add_action( 'wp_enqueue_scripts', 'startwordpress_scripts' );
 
 //Loads google fonts.

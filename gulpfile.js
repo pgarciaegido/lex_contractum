@@ -18,7 +18,7 @@ gulp.task('scripts', function(){
 			.pipe(webpack({
 				output: {filename: 'index.js'}
 			}))
-			.pipe(uglify())
+			// .pipe(uglify())
 			.on('error', errorLog)
 			.pipe(gulp.dest('./'));
 });

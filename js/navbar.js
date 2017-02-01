@@ -1,4 +1,4 @@
-var $ = require('../../../../wp-includes/js/jquery/jquery.js')
+var $ = require('../../../../wp-includes/js/jquery/jquery.js');
 
 module.exports = {
   navColor   : navColor,
