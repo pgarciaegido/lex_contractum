@@ -97,6 +97,7 @@
 		&-text{
 			font-size: $p-mobile;
 		}
+
 	}
 	.status{
 		margin-left: $margin-mobile;
@@ -106,7 +107,12 @@
 }
 
 @media screen and (max-width : 400px){
-	.Article-text{
-		font-size: .9em;
+	.Article{
+		&-entradilla{
+			font-size: 1em;
+		}
+		p{
+			font-size: 0.9em;
+		}
 	}
 }

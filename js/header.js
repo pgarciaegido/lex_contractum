@@ -11,7 +11,12 @@ module.exports = {
 // Opens the menu
 function showMenu(){
   var top = window.pageYOffset + 100
-  v.$menu.style.cssText = 'display:block; transition: all .3s cubic-bezier(0.76, 0, 0.3, 1); top:' + top + 'px;';
+  var topSmall = window.pageYOffset + 70
+  if (window.innerWidth < 400){
+    v.$menu.style.cssText = 'display:block; transition: all .3s cubic-bezier(0.76, 0, 0.3, 1); top:' + topSmall + 'px;';
+  } else {
+    v.$menu.style.cssText = 'display:block; transition: all .3s cubic-bezier(0.76, 0, 0.3, 1); top:' + top + 'px;';
+  }
   v.$body.classList.add('overflow');
   v.$darkbg.classList.add('active');
 }
