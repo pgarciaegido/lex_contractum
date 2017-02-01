@@ -29,8 +29,8 @@ jQuery(document).ready(function(){
 	jQuery(window).bind('load', sticky.footer);
   jQuery(window).bind('load', nav.linkInTag);
 	v.$arrow.addEventListener('touchstart', header.showMenu);
-	v.$darkbg.addEventListener('touchstart', header.removeMenu);
-	v.$close.addEventListener('touchstart', header.removeMenu);
+	v.$darkbg.addEventListener('touchend', header.removeMenu);
+	v.$close.addEventListener('touchend', header.removeMenu);
 	v.$buscar.addEventListener('keydown', header.search);
 	v.$buscarMob.addEventListener('touchstart', header.searchMobile);
 	document.addEventListener('scroll', header.readingBar);

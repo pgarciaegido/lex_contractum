@@ -17,7 +17,8 @@ function showMenu(){
 }
 
 // closes the menu
-function removeMenu(){
+function removeMenu(e){
+  e.preventDefault(e);
   v.$menu.style.cssText = 'top: -9999px;';
   v.$body.classList.remove('overflow');
   v.$darkbg.classList.remove('active');
