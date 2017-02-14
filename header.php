@@ -21,44 +21,51 @@
 			</div>
 			<i class="fa fa-bars burguer-button" id="arrow"></i>
 			<a href="<?php bloginfo( 'wpurl' );?>"><img class="barra-superior-logo" id="logo-mobile" src="<?php bloginfo('template_url'); ?>/images/logo-blanco.svg" alt="Logo"></a>
-			<!--BUSCAR-->
-			<form class="Buscar">
-				<input type="text" class="Buscar-input" id="buscar">
-				<i class="fa fa-search" id="buscarIcon" aria-hidden="true"></i>
-			</form>
+			<i class="fa fa-search barra-superior-search" id="buscarIcon" aria-hidden="true"></i>
 			<!--BUSCAR-->
 		</div>
 	</div>
-	<nav class="menu">
-		<div class="menu-container">
-			<h1 class="menu-title"><a href="http://lexcontractus.es">Lex Contractus</a></h1>
-		  <ul class="menu-list" id="color-menu">
-		    <li class="menu-list-item"><a href="http://lexcontractus.es">HOME</a></li>
-		    <li class="menu-list-item"><a href="http://lexcontractus.es/category/mercantil/">MERCANTIL</a></li>
-		    <li class="menu-list-item"><a href="http://lexcontractus.es/category/fiscal-internacional/">FISCAL INTERNACIONAL</a></li>
-		    <li class="menu-list-item"><a href="http://lexcontractus.es/category/propiedad-industrial-e-intelectual/">PROPIEDAD INDUSTRIAL</a></li>
-		    <li class="menu-list-item"><a href="http://lexcontractus.es/quienes-somos/">QUIENES SOMOS</a></li>
-		    <li class="menu-list-item"><a href="http://lexcontractus.es/contacta/">CONTACTA</a></li>
-		  </ul>
-		</div>
-	</nav>
-	<!-- MOBILE INPUT -->
-	<input type="text" id="buscar" class="Buscar-input-mob">
-	<!-- /MOBILE INPUT -->
-	<div class="container" id="container">
-				<!-- MOBILE MENU -->
-		<nav class="Mobile" id="Mobile">
-			<div class="Mobile-header">
-				<h2 class="Mobile-title">MENU</h2>
-				<i id="Mobile-close" class="fa fa-times-circle-o" aria-hidden="true"></i>
+	<div class="Buscar" id="buscarDiv">
+		<div class="Buscar-container">
+			<p class="Buscar-title">Buscar</p>
+			<div class="Buscar-input">
+				<input type="text" placeholder="Buscar" id="buscar">
+				<i class="fa fa-close" id="buscarClose"></i>
 			</div>
-			<ul class="Mobile-list">
-				<a href="http://lexcontractus.es"><li class="Mobile-list-item">HOME</li></a>
-				<a href="http://lexcontractus.es/category/mercantil/"><li class="Mobile-list-item">MERCANTIL</li></a>
-				<a href="http://lexcontractus.es/category/fiscal-internacional/"><li class="Mobile-list-item">FISCAL INTERNACIONAL</li></a>
-				<a href="http://lexcontractus.es/category/propiedad-industrial-e-intelectual/"><li class="Mobile-list-item">PROPIEDAD INDUSTRIAL E INTELECTUAL</li></a>
-				<a href="http://lexcontractus.es/quienes-somos/"><li class="Mobile-list-item">¿QUIENES SOMOS?</li></a>
-				<a href="http://lexcontractus.es/contacta/"><li class="Mobile-list-item">CONTACTO</li></a>
-			</ul>
+		</div>
+	</div>
+	<!-- buscar-pushdown will get the whole page down when buscar is opened -->
+	<div id="buscarPushdown">
+		<nav class="menu">
+			<div class="menu-container">
+				<h1 class="menu-title"><a href="http://lexcontractus.es">Lex Contractus</a></h1>
+			  <ul class="menu-list" id="color-menu">
+			    <li class="menu-list-item"><a href="http://lexcontractus.es">HOME</a></li>
+			    <li class="menu-list-item"><a href="http://lexcontractus.es/category/mercantil/">MERCANTIL</a></li>
+			    <li class="menu-list-item"><a href="http://lexcontractus.es/category/fiscal-internacional/">FISCAL INTERNACIONAL</a></li>
+			    <li class="menu-list-item"><a href="http://lexcontractus.es/category/propiedad-industrial-e-intelectual/">PROPIEDAD INDUSTRIAL</a></li>
+			    <li class="menu-list-item"><a href="http://lexcontractus.es/quienes-somos/">QUIENES SOMOS</a></li>
+			    <li class="menu-list-item"><a href="http://lexcontractus.es/contacta/">CONTACTA</a></li>
+			  </ul>
+			</div>
 		</nav>
+		<!-- MOBILE INPUT -->
+		<!-- <input type="text" id="buscar" class="Buscar-input-mob"> -->
+		<!-- /MOBILE INPUT -->
+		<div class="container" id="container">
+					<!-- MOBILE MENU -->
+			<nav class="Mobile" id="Mobile">
+				<div class="Mobile-header">
+					<h2 class="Mobile-title">MENU</h2>
+					<i id="Mobile-close" class="fa fa-times-circle-o" aria-hidden="true"></i>
+				</div>
+				<ul class="Mobile-list">
+					<a href="http://lexcontractus.es"><li class="Mobile-list-item">HOME</li></a>
+					<a href="http://lexcontractus.es/category/mercantil/"><li class="Mobile-list-item">MERCANTIL</li></a>
+					<a href="http://lexcontractus.es/category/fiscal-internacional/"><li class="Mobile-list-item">FISCAL INTERNACIONAL</li></a>
+					<a href="http://lexcontractus.es/category/propiedad-industrial-e-intelectual/"><li class="Mobile-list-item">PROPIEDAD INDUSTRIAL E INTELECTUAL</li></a>
+					<a href="http://lexcontractus.es/quienes-somos/"><li class="Mobile-list-item">¿QUIENES SOMOS?</li></a>
+					<a href="http://lexcontractus.es/contacta/"><li class="Mobile-list-item">CONTACTO</li></a>
+				</ul>
+			</nav>
 		<!-- MOBILE-MENU -->

@@ -4,7 +4,9 @@ module.exports = {
   showMenu    : showMenu,
   removeMenu  : removeMenu,
   search      : search,
-  searchMobile: searchMobile,
+  openSearch  : openSearch,
+  closeSearch : closeSearch,
+  oCSearch    : oCSearch,
   readingBar  : readingBar
 }
 
@@ -30,7 +32,7 @@ function removeMenu(e){
 }
 
 
-// Opens the search bar
+// Searchs
 function search(e){
   if(e.keyCode === 13){
     event.preventDefault(e);
@@ -40,17 +42,27 @@ function search(e){
   }
 }
 
-// Opens the search bar on mobile
+// Open and close search
+
 var opened = false;
-function searchMobile(){
-  if(window.innerWidth < 891 && opened === false){
-    v.$buscar.style.cssText = 'display:block; position: absolute; width:50%; top:55px; right:20px;';
-    opened = true;
-  } else if(window.innerWidth < 891 && opened === true){
-    v.$buscar.style.cssText = 'display:none;';
-    opened = false;
-  }
+function openSearch(e){
+  event.preventDefault(e);
+  v.$buscarDiv.classList.add('buscar_opened');
+  v.$buscarPushdown.style.cssText = 'padding-top: 50px;';
+  opened = true;
 }
+
+function closeSearch(e){
+  event.preventDefault(e);
+  v.$buscarDiv.classList.remove('buscar_opened');
+  v.$buscarPushdown.style.cssText = 'padding-top: 0;';
+  opened = false;
+}
+
+function oCSearch(e){
+  opened === false ? openSearch(e) : closeSearch(e);
+}
+// / Open and close search
 
 // Progress bar. Increases on scroll
 function readingBar () {

@@ -36,6 +36,18 @@ i.burguer-bottom{
 	&-logo{
 		display: none;
 	}
+
+	&-search{
+		margin-right: $margin-mobile;
+		cursor: pointer;
+	}
+}
+
+/* Search icon */
+.fa-search:before {
+    content: "\f002";
+    font-size: 1.5em;
+    color: white;
 }
 
 #reading-bar{
@@ -73,6 +85,10 @@ i.burguer-bottom{
 			width: 70%;
 			margin: 0 auto;
 			margin-top: 10px;
+		}
+
+		&-search{
+			margin-top: 4px;
 		}
 	}
 

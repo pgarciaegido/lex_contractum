@@ -1,42 +1,75 @@
 .Buscar{
-	text-align: right;
-	margin-right: $margin-mobile;
+	position: absolute;
+	width: 100%;
+	top: -100px;
+	padding: 7px 0;
+	transition: 0.4s;
+	visibility: hidden;
+	opacity: 0;
+
+	&-container{
+		display: flex;
+		justify-content: space-between;
+		max-width: 1000px;
+		margin: 0 auto;
+		padding: 0 $margin-mobile;
+	}
+
+	&-title{
+		margin: 0;
+		font-family: 'Asap';
+		font-size: 1.2em;
+		font-weight: 700;
+	}
+
 	&-input{
-		width: 320px;
-		height: 20px;
-		border-radius: 5px;
-		background: $white;
-		&-mob{
-			display: none;
-			position: absolute;
-			top: 72px;
-			right: 0;
+
+		input{
+			margin-right: 5px;
+			width: 320px;
+			height: 20px;
 			border-radius: 5px;
+			background: $white;
+		}
+
+		i{
+			cursor: pointer;
+			font-size: 1.2em;
 		}
 	}
 }
-.fa-search:before {
-    content: "\f002";
-    font-size: 1.25em;
-    color: white;
+
+.buscar_opened{
+	visibility: visible;
+	opacity: 1;
+	top: 40px;
 }
 
-@media screen and (max-width : 890px){
+#buscarPushdown{
+	transition: 0.4s;
+}
+
+@media screen and (max-width : 900px){
+	.buscar_opened{
+		top: 51px;
+	}
+}
+
+@media screen and (max-width : 500px){
 	.Buscar{
-		margin-top: 8px;
-		margin-bottom: $baseline-mobile;
-		display: block;
-		&-input{
+
+		&-container{
+			justify-content: flex-end;
+		}
+
+		&-title{
 			display: none;
 		}
-		#buscar-icon{
-			font-size: 1.6em;
-		}
-	}
-}
 
-@media screen and (max-width : 800px){
-	.Buscar{
-		margin-right: $margin-tablet;
+		&-input{
+			input{
+				width: 230px;
+			}
+		}
 	}
 }

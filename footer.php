@@ -34,6 +34,7 @@
 	</footer>
 	</div>
 </div>
+</div> <!--buscar-pushdown -->
 <?php wp_footer(); ?>
 </body>
 </html>

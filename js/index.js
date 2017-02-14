@@ -32,6 +32,7 @@ jQuery(document).ready(function(){
 	v.$darkbg.addEventListener('touchend', header.removeMenu);
 	v.$close.addEventListener('touchend', header.removeMenu);
 	v.$buscar.addEventListener('keydown', header.search);
-	v.$buscarMob.addEventListener('touchstart', header.searchMobile);
+	v.$buscarI.addEventListener('click', header.oCSearch);
+	v.$buscarClose.addEventListener('click', header.closeSearch);
 	document.addEventListener('scroll', header.readingBar);
 })

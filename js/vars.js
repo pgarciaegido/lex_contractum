@@ -5,6 +5,9 @@ module.exports = {
   $darkbg        : document.getElementById('darkbg'),
   $close         : document.getElementById('Mobile-close'),
   $buscar        : document.getElementById('buscar'),
-  $buscarMob     : document.getElementById('buscarIcon'),
+  $buscarI       : document.getElementById('buscarIcon'),
+  $buscarClose   : document.getElementById('buscarClose'),
+  $buscarDiv     : document.getElementById('buscarDiv'),
+  $buscarPushdown: document.getElementById('buscarPushdown'),
   $barraSuperior : document.getElementById('barra-superior')
 }
