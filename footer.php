@@ -8,7 +8,7 @@
 			<a target="_blank" href="https://twitter.com/lex_contractus"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
 			<a target="_blank" href="https://www.linkedin.com/company/15235328"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 		</div>
-		<p class="Footer-copy">Lex Contractus | 2016</p>
+		<p class="Footer-copy">Lex Contractus | 2017</p>
 	</div>
 		<nav class="Footer-menu">
 			<ul class="Footer-menu-list">
@@ -30,7 +30,7 @@
 			</div>
 			<!-- DESIGN AND DEVELOPMENT -->
 		</nav>
-		<p class="Footer-copymob">Lex Contractus | 2016</p>
+		<p class="Footer-copymob">Lex Contractus | 2017</p>
 	</footer>
 	</div>
 </div>

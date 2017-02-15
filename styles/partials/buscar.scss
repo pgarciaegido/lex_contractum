@@ -1,3 +1,5 @@
+/* This is the search bar that shows when clicking icon on top bar*/
+
 .Buscar{
 	position: absolute;
 	width: 100%;
@@ -50,8 +52,13 @@
 }
 
 @media screen and (max-width : 900px){
+	.Buscar{
+		position: fixed;
+		z-index: 2;
+	}
 	.buscar_opened{
 		top: 51px;
+		background-color: white;
 	}
 }
 
